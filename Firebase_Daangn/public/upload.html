@@ -84,7 +84,14 @@
       // 파일명 미지정 -> add
       // 흔히 쓰는건 add
       db.collection('product').add({제목 : '변기'})
-
+      $('.container').append(내용맨이야)
+      var 내용맨이야 = `<div class="container mt-3">
+                      <input type="text" class="form-control mt-2" id="title" placeholder="title">
+                      <textarea class="form-control mt-2" id="content">content</textarea>
+                      <input type="text" class="form-control mt-2" id="price" placeholder="price">
+                      <input class="form-control mt-2" type="file" id="image">
+                      <button class="btn btn-danger mt-3" id="send">올리기</button>
+                    </div>`
     </script>
 
 <!-- 클론 코딩 upload.html -->
