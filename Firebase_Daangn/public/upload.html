@@ -80,16 +80,31 @@
     <script>
       //데이터 가져오기
       const db = firebase.firestore();
+      const storage = firebase.storeage();
       // 파일명 지정 -> doc.set
       // 파일명 미지정 -> add
       // 흔히 쓰는건 add
       $('#send').click(function(){
+        var file = document.querySelector('#image').files[0];
+        // 파이어스토리지 사용 문법
+        var storageRef = storage.ref();
+        var 저장할경로 = storageRef.child('image/' + file.name);
+        var 업로드작업 = 저장할경로.put(file)
+
+
         var 저장할거 = { 
           제목 : $('#title').val(),
           가격 : $('#price').val(),
           내용 : $('#content').val(),
+          날짜 : new Date(),
         }
-        db.collection('product').add(저장할거)
+        // then -> 성공 후에 실행할 코드
+        db.collection('product').add(저장할거).then((result)=>{
+          console.log(result);
+          window.location.href = "/index.html";
+        }).catch((err)=>{
+          console.log(err)
+        })
       });
     </script>
 
