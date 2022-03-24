@@ -77,10 +77,20 @@
       </div>
     </nav>
 
+      <!-- 클론 코딩 upload.html -->
+    <div class="container mt-3">
+      <input type="text" class="form-control mt-2" id="title" placeholder="title">
+      <textarea class="form-control mt-2" id="content">content</textarea>
+      <input type="text" class="form-control mt-2" id="price" placeholder="price">
+      <input class="form-control mt-2" type="file" id="image">
+      <button class="btn btn-danger mt-3" id="send">올리기</button>
+    </div>
+
+
     <script>
       //데이터 가져오기
       const db = firebase.firestore();
-      const storage = firebase.storeage();
+      const storage = firebase.storage();
       // 파일명 지정 -> doc.set
       // 파일명 미지정 -> add
       // 흔히 쓰는건 add
@@ -89,8 +99,7 @@
         // 파이어스토리지 사용 문법
         var storageRef = storage.ref();
         var 저장할경로 = storageRef.child('image/' + file.name);
-        var 업로드작업 = 저장할경로.put(file)
-
+        var 업로드작업 = 저장할경로.put(file);
 
         var 저장할거 = { 
           제목 : $('#title').val(),
@@ -108,14 +117,7 @@
       });
     </script>
 
-<!-- 클론 코딩 upload.html -->
-  <div class="container mt-3">
-    <input type="text" class="form-control mt-2" id="title" placeholder="title">
-    <textarea class="form-control mt-2" id="content">content</textarea>
-    <input type="text" class="form-control mt-2" id="price" placeholder="price">
-    <input class="form-control mt-2" type="file" id="image">
-    <button class="btn btn-danger mt-3" id="send">올리기</button>
-  </div>
+
 
   </body>
 </html>

@@ -8,3 +8,12 @@
 Firebase DB에서 데이터 가져오기
 Firebase DB에 데이터 저장하기
 
+### 22.03.22
+Firebase DB에 데이터 저장하기 숙제 수정
+Firebase Storage에 이미지 업로드 코드 삽입
+
+### 22.03.23
+Firebase DB에 저장시 날짜 추가
+Upload 페이지 실행 시, 오류 시 작동하는 코드 추가
+
+### 22.03.24
