@@ -77,18 +77,12 @@
       </div>
     </nav>
 
-    <!-- detail 페이지 클론 html -->
-    <div class="container">
-        상세페이지임 
-        <button id="edit">수정</button>
-        <div class="detail-pic my-4"></div>
-        <div>
-          <h5>올린사람 : 모름</h5>
-          <hr>
-          <h5 class="title"></h5>
-          <p class="date"></p>
-          <p class="price"></p>
-        </div>
+      <!-- 클론 코딩 upload.html -->
+    <div class="container mt-3">
+      <input type="text" class="form-control mt-2" id="title" placeholder="title" value="">
+      <textarea class="form-control mt-2" id="content"></textarea>
+      <input type="text" class="form-control mt-2" id="price" placeholder="price">
+      <button class="btn btn-danger mt-3" id="send">올리기</button>
     </div>
 
 
@@ -96,34 +90,28 @@
       //데이터 가져오기
       const db = firebase.firestore();
       const storage = firebase.storage();
-
-      // URL을 오브젝트 자료형으로 변환
+      
       var 쿼리스트링 = new URLSearchParams(window.location.search);
 
       db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
         console.log(result.data())
 
-        $('.title').html(result.data().제목)
-        $('.price').html(result.data().가격)
-        $('.detail-pic').css('background-image', `url(${result.data().이미지})`)
-      })
-      //   // 동적html사용
-      //   var detail내용 = `<div class="detail-pic my-4" style="background-image: url('${result.data().이미지}');"></div>
-      //                   <div>
-      //                   <h5>올린사람 : 모름</h5>
-      //                   <hr>
-      //                   <h5 class="title">${result.data().제목}</h5>
-      //                   <p class="date">올린날짜</p>
-      //                   <p class="price">${result.data().가격}</p>
-      //                 </div>`
-    
-      //   $('.container').append(detail내용)
-      // })
-
-      $('#edit').click(function(){
-        window.location.href = '/edit.html?id=' + 쿼리스트링.get('id')
+        $('#title').val(result.data().제목)
+        $('#price').val(result.data().가격)
+        $('#content').val(result.data().내용)
       })
 
+
+      $('#send').click(function(){
+        var 바꿀거 = {
+        제목 : $('#title').val(),
+        가격 : $('#price').val(),
+        내용 : $('#content').val()
+        }
+        db.collection('product').doc(쿼리스트링.get('id')).update(바꿀거)
+      
+      })
+      
 
     </script>
 
@@ -131,4 +119,3 @@
 
   </body>
 </html>
-

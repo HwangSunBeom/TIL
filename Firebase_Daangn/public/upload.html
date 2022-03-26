@@ -119,7 +119,12 @@
                 가격 : $('#price').val(),
                 내용 : $('#content').val(),
                 날짜 : new Date(),
-                이미지 : url
+                이미지 : url,
+                // 나중에는 login 페이저 어쓰함수 가져다 쓰세요
+                uid : JSON.parse(localStorage.getItem('user')).uid,
+                이름 : JSON.parse(localStorage.getItem('user')).displayName
+
+
               }
               // then -> 성공 후에 실행할 코드
               db.collection('product').add(저장할거).then((result)=>{
