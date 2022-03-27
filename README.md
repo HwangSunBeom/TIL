@@ -17,3 +17,13 @@ Firebase DB에 저장시 날짜 추가
 Upload 페이지 실행 시, 오류 시 작동하는 코드 추가
 
 ### 22.03.24
+Upload 페이지 정상작동 확인
+
+### 22.03.26
+Detail 페이지 및 Login 페이지 구현
+Update 페이지 및 수정 기능 구현
+User collection 추가
+
+### 22.03.27
+pool-backend 로컬로 이동
+LoginPage에 파이어베이스 설치
