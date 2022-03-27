@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/profile.css" />
+        <link rel="stylesheet" type="text/css" href="css/editProfile.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="profile_banner_container">
+            <img class="profile_banner" src="img/banner_sample.jfif" />
+            <button class="camera_button_banner">
+                <img class="camera_icon" src="img/camera.svg" />
+            </button>
+        </div>
+        <div class="main_container">
+            <!-- 프로필 영역 -->
+            <div class="profile_container">
+                <div class="profile_img_container">
+                    <img class="profile_img" src="img/profile_sample.jpg" />
+                </div>
+                <button class="camera_button_profile">
+                    <img class="camera_icon" src="img/camera.svg" />
+                </button>
+                <div class="profile_info_container">
+                    <input class="edit_user_name" placeholder="피지컬갤러리" />
+                    <textarea class="edit_user_info">
+This is User Introduction Text. This is User Introduction Text.</textarea
+                    >
+                </div>
+            </div>
+            <!-- 팔로워수 공개 옵션 -->
+            <div class="option">
+                <div class="radio_label">팔로워수</div>
+                <input
+                    type="radio"
+                    name="follower_num"
+                    id="true"
+                    checked="checked"
+                />
+                <label for="true">공개</label>
+                <input type="radio" name="follower_num" id="false" />
+                <label for="false">비공개</label>
+            </div>
+            <!-- 프로필 수정 완료 -->
+            <button class="edit_button">Done</button>
+        </div>
+    </body>
+</html>
