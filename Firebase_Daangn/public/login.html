@@ -7,6 +7,10 @@
     <!-- index.css 붙이기 -->
     <link href="index.css" rel="stylesheet">
 
+    <!-- 파이어베이스 UI 로그인을 해보자 -->
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
@@ -167,7 +171,93 @@
 
     </script>
 
+    <!-- <script>
+      // 소스 파일 내에서 모듈 require 처리해주기
+      var firebase = require('firebase');
+      var firebaseui = require('firebaseui');
 
+      // 인증 UI 초기화
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+      // signInOptions 목록에 추가
+      ui.start('#firebaseui-auth-container', {
+        signInOptions: [
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Other config options...
+      });
+
+      // 이메일 링크 인증
+      ui.start('#firebaseui-auth-container', {
+        signInOptions: [
+          {
+            provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            signInMethod: firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD
+          }
+        ],
+        // Other config options...
+      });
+
+      // 조건부로 로그인 UI를 렌더링하는 경우 ui.isPendingRedirect()를 사용해보자
+      // Is there an email link sign-in?
+      if (ui.isPendingRedirect()) {
+        ui.start('#firebaseui-auth-container', uiConfig);
+      }
+      // This can also be done via:
+      if (firebase.auth().isSignInWithEmailLink(window.location.href)) {
+        ui.start('#firebaseui-auth-container', uiConfig);
+      }
+
+      // FirebaseUI 인스턴스 초기화
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+      // 지원되는 제공업체, UI 맞춤설정, 성공 콜백 등 FirebaseUI 구성 지정
+      var uiConfig = {
+        callbacks: {
+          signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+            // User successfully signed in.
+            // Return type determines whether we continue the redirect automatically
+            // or whether we leave that to developer to handle.
+            return true;
+          },
+          uiShown: function() {
+            // The widget is rendered.
+            // Hide the loader.
+            document.getElementById('loader').style.display = 'none';
+          }
+        },
+        // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+        signInFlow: 'popup',
+        signInSuccessUrl: '<url-to-redirect-to-on-success>',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+          firebase.auth.GithubAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          firebase.auth.PhoneAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>',
+        // Privacy policy url.
+        privacyPolicyUrl: '<your-privacy-policy-url>'
+      };
+
+      // FirebaseUI 인증 인터페이스 렌더링
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+
+    </script> -->
+
+    <!-- FirebaseUI 로그인 위젯을 렌더링할 HTML 요소 정의 -->
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+    <!-- <h1>Welcome to My Awesome App</h1>
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading...</div> -->
 
   </body>
 </html>

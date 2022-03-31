@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <!-- index.css 붙이기 -->
+    <link href="index.css" rel="stylesheet">
+
+    <!-- 파이어베이스 UI 로그인을 해보자 -->
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <!-- <script src="/__/firebase/init.js?useEmulator=true"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      document.cookie = "safeCookie1=foo; SameSite=Lax";
+      document.cookie = "safeCookie2=foo";
+      document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
+      // // Set a same-site cookie for first-party contexts
+      // document.cookie = 'cookie1=value1; SameSite=Lax';
+      // // Set a cross-site cookie for third-party contexts
+      // document.cookie = 'cookie2=value2; SameSite=None; Secure';
+    </script>
+
+  </head>
+  <body>
+    
+    <script>
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDegbPJFlzpsU52NVPyOhPguhwQerBJM3Q",
+        authDomain: "daangnclone-93c13.firebaseapp.com",
+        projectId: "daangnclone-93c13",
+        storageBucket: "daangnclone-93c13.appspot.com",
+        messagingSenderId: "576330769441",
+        appId: "1:576330769441:web:dbc5e25cb77a7ef9d12f60"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig) 
+
+    </script>
+
+    
+
+    <!-- FirebaseUI 로그인 위젯을 렌더링할 HTML 요소 정의 -->
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+    <h1>Welcome to My Awesome App</h1>
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading...</div>
+
+    <div>
+      <button id = "login_BTN"> 로그인 </button>
+      <span id = "AUTH_STARE">인증되지 않음</span>
+    </div>
+    
+
+    <script>
+
+      $('#login_BTN').click(function(){
+        // 프로바이더 생성
+        var provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase
+          .auth()
+          .signInWithPopup(provider)
+          .then(function(result){
+          var token = result.credential.accessToken;
+          var user = result.user;
+          console.log(user)
+          $('#AUTH_STATE').text(result.user.displayName + "님 로그인 하셨습니다.");
+          }).catch(function(error){
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            var email = error.email;
+            var credential = error.credential;
+          });
+      });
+
+    </script>
+
+  </body>
+</html>
