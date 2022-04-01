@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM(도큐멘트 오브젝트 모델)이란? js를 활용한 화면 구성을 변경하는...? -->
+    <h1>자기소개</h1>
+    <!-- 이벤트 핸들링 
+        <textarea 이벤트 = 이벤트 핸들링></textarea>와 같이 html 태그 내에서 사용 -->
+    <textarea id = "jasoseol" onkeydown='counter();'>저는 인성 문제가 없습니다.</textarea>
+    <span id="count">(0/200)</span>
+
+    <script>
+        
+        // 함수 -> 명령어의 모음. function 함수이름(){ 명령어1; 명령어2; }와 같이 사용
+        function counter(){
+            // 값을 가져오는 방법 document.getElementById().value가 있음. 물론 클래스도 있다만 id는 하나뿐인걸 참고하자. 
+            var content = document.getElementById('jasoseol').value;
+            var length = content.length;
+            if (content.length > 200){
+                // 문자열을 자르는 방법 .substring()
+                content = content.substring(0, 200);
+                document.getElementById('jasoseol').value = content;
+            }
+            // 특정 html 문서를 id로 가져오고, innerHTML를 통해 내용을 변경
+            document.getElementById('count').innerHTML = '(' + content.length + ' / 200)';
+        };
+        counter();
+
+    </script>
+
+</body>
+</html>
