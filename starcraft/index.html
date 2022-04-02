@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <h1> jQuery 기초</h1>
+    <textarea id = "content">jQuery를 배워보자</textarea>
+    <button id="click">클릭</button>
+
+    <!-- jQuery 장점
+    1. 간결한 문법
+    2. 편리한 API
+    3. 크로스 브라우징
+    기본 문법 -> $('ㅌㅌㅌㅌ') -->
+    <script>
+
+        console.log($('#content').val());
+
+        // jquery 이벤트
+        // function hello(){
+        //     console.log('hello');
+        // }
+        // $('#click').click(hello);
+
+        // 익명 함수 사용하기
+        $('#click').click(function(){
+            console.log('hello');
+        })
+
+
+    </script>
+
+
+
+</body>
+</html>
