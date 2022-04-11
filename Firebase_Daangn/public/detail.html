@@ -98,11 +98,33 @@
       const db = firebase.firestore();
       const storage = firebase.storage();
 
+      var 내uid = JSON.parse(localStorage.getItem('user')).uid;
+      var 판매자uid;
+      var 상품명;
+      console.log(JSON.parse(localStorage.getItem('user')).uid);
+
+      $('#edit').click(function(){
+        window.location.href = '/edit.html?id=' + 쿼리스트링.get('id')
+      })
+
+      $('chat').click(function(){
+        var 데이터 = {
+            from : 내uid,
+            to : 판매자uid,
+            product : 상품명,
+            data : new Date()
+        }
+        db.collection('chatroom').add(데이터)
+        console.log(데이터)
+      })
+
       // URL을 오브젝트 자료형으로 변환
       var 쿼리스트링 = new URLSearchParams(window.location.search);
 
       db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
         console.log(result.data())
+        판매자uid = result.data().uid
+        상품명 = result.data().제목
         $('.author').html('올린 사람 : ' + result.data().이름)
         $('.title').html(result.data().제목)
         $('.price').html(result.data().가격)
@@ -120,11 +142,6 @@
     
       //   $('.container').append(detail내용)
       // })
-
-      $('#edit').click(function(){
-        window.location.href = '/edit.html?id=' + 쿼리스트링.get('id')
-      })
-
 
     </script>
 

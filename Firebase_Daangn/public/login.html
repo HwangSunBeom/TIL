@@ -126,6 +126,12 @@
             console.log(user.displayName)
             localStorage.setItem('user', JSON.stringify(user))
             // $('#userName').html(user.displayName)
+            var 데이터 = {
+              uid : user.uid,
+              name : user.displayName,
+              email : user.email,
+            }
+            db.collection('user').doc(user.uid).set(데이터)
           }
 
       })
@@ -156,7 +162,7 @@
           
           var 유저정보 = {
             name : 이름,
-            email : 이메일
+            email : 이메일,
           }
 
           db.collection('user').doc(result.user.uid).set(유저정보)
