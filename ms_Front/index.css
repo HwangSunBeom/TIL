@@ -1,0 +1,40 @@
+body {
+    margin : 0px;
+    height: 2000px;
+}
+
+section {
+    background: url(https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg) fixed;
+    height: 800px;
+}
+
+.picture_1 {
+    position: absolute;
+    left : 800px;
+    top : 150px;
+}
+
+h1 {
+    color: white;
+    font-size: 10em;
+    width : 250px;
+    position: absolute;
+    top : 80px;
+    left : 200px;
+    font-family: 'Courier New', Courier, monospace;
+
+    animation: slide-right 3s;
+}
+
+@keyframes slide-right {
+    from {
+        left : -50px;
+        opacity: 0;
+    }
+    to {
+        left : 200px;
+        opacity: 1;
+        color : orange;
+        font-size: 5em;
+    }
+}
