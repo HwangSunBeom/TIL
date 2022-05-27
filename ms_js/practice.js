@@ -29,8 +29,8 @@
 //     document.getElementById("num").innerHTML = num;
 // });
 
-document.querySelector(".bar").addEventListener("click", function(){
-    // document.querySelector(".bar").innerHTML = "눌렀어!"
-    // document.querySelector(".newBar").style.display = "block";
-    document.querySelector(".newBar").classList.toggle("show");
-});
+// document.querySelector(".bar").addEventListener("click", function(){
+//     // document.querySelector(".bar").innerHTML = "눌렀어!"
+//     // document.querySelector(".newBar").style.display = "block";
+//     document.querySelector(".newBar").classList.toggle("show");
+// });
