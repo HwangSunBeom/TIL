@@ -37,33 +37,92 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { darkTheme, GlobalStyles, lightTheme } from './styles';
+import { ThemeProvider } from 'styled-components';
+import loadingIcon from './loading.svg';
 
 function App() {
-    return 
-    <>
-        <MediaDiv>
-            <Header>   
-                <TitleLogoDiv>
-                    <TitleBig>멋사</TitleBig>
-                    <TitleSmall>익명게시판</TitleSmall>
-                </TitleLogoDiv>
-                <SubHeaderDiv>다크모드 버튼</SubHeaderDiv>
-            </Header>
-            <Main>
-                <SlogunBig>HACK YOUR LIFE</SlogunBig>
-                <SlogunSmall>
-                    내 아이디어를 내 손으로 실현한다.
-                </SlogunSmall>
-            </Main>
-            <PostSection>
-                <PostTitleDiv>
-                    <FontAwesomeIcon icon={faArrowsRotate} />
-                    <PostTitle>익명게시판</PostTitle>
-                    <FontAwesomeIcon icon={}
-                </PostTitleDiv>
-            </PostSection>
-        </MediaDiv>
-    </>;
+    const darkMode = true;
+    const loading = true;
+    const isPost = true;
+    return (
+        <>
+            <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+                <GlobalStyles />
+                <MediaDiv>
+                    <Header>   
+                        <TitleLogoDiv>
+                            <TitleBig>멋사</TitleBig>
+                            <TitleSmall>익명게시판</TitleSmall>
+                        </TitleLogoDiv>
+                        <SubHeaderDiv>
+                            {
+                                darkMode ? (
+                                    <div>
+                                        <FontAwesomeIcon icon={faSun} />
+                                    </div>
+                                ) : (
+                                    <div>
+                                        <FontAwesomeIcon icon={faMoon} />
+                                    </div>
+                                )
+                            }
+                        </SubHeaderDiv>
+                    </Header>
+                    <Main>
+                        <SlogunBig>HACK YOUR LIFE</SlogunBig>
+                        <SlogunSmall>
+                            내 아이디어를 내 손으로 실현한다.
+                        </SlogunSmall>
+                        <PostSection>
+                            <PostTitleDiv>
+                                <FontAwesomeIcon icon={faArrowsRotate} />
+                                <PostTitle>익명게시판</PostTitle>
+                                <FontAwesomeIcon icon={faPenToSquare} />
+                            </PostTitleDiv>
+                            <PostListDiv>
+                                {loading ? 
+                                    (
+                                        <LoadingDiv>
+                                            <LoadingImg src={loadingIcon} />
+                                        </LoadingDiv>
+                                    ) : isPost ? (
+                                        <LoadingDiv>아직 기록된 글이 없습니다.</LoadingDiv>
+                                        ) : (
+                                            <ul>
+                                                <EachPostLi>
+                                                    <div>
+                                                        <FontAwesomeIcon icon={faLocationPin} />
+                                                        <PostLink>
+                                                            서강학보, 시사 N 대학기자상 취재
+                                                        </PostLink>
+                                                    </div>
+                                                    <PostRepl>[35]</PostRepl>
+                                                </EachPostLi>
+                                            </ul>
+                                        )
+                                }
+                            </PostListDiv>
+                        </PostSection>
+                        <PagingSection>
+                            <PagenumberDiv>
+                                <FontAwesomeIcon icon={faArrowLeft} />
+                            </PagenumberDiv>
+                            <PagenumberDiv></PagenumberDiv>
+                            <PagenumberDiv>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </PagenumberDiv>
+                        </PagingSection>
+                    </Main>
+                    <Footer>
+                        <FontAwesomeIcon icon={faReact} />
+                        <FooterBig>for react study</FooterBig>
+                        <FooterSmall>2022.06.09. by beom</FooterSmall>
+                    </Footer>
+                </MediaDiv>
+            </ThemeProvider>
+        </>
+    )
 }
 
 export default App;
