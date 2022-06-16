@@ -3,7 +3,7 @@ import {
     Footer,
     FooterBig,
     FooterSmall,
-    HeaderDiv,
+    Header,
     LoadingDiv,
     LoadingImg,
     Main,
@@ -39,24 +39,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { darkTheme, GlobalStyles, lightTheme } from './styles';
 import { ThemeProvider } from 'styled-components';
-import Header from './Header';
-// import Slogun from './Slogun';
-// import ShowPostList from './ShowPostList';
-// import Footer from './Footer';
 import loadingIcon from './loading.svg';
 import { useState } from 'react';
 
 function App() {
-    // const darkMode = false;
+    // const darkMode = true;
     const [darkMode, setDarkMode] = useState(true);
-    const loading = false;
-    const isPost = false;
+    const loading = true;
+    const isPost = true;
     return (
         <>
             <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
                 <GlobalStyles />
                 <MediaDiv>
-                    <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+                    <Header>   
+                        <TitleLogoDiv>
+                            <TitleBig>멋사</TitleBig>
+                            <TitleSmall>익명게시판</TitleSmall>
+                        </TitleLogoDiv>
+                        <SubHeaderDiv>
+                            {
+                                darkMode ? (
+                                    <div>
+                                        <FontAwesomeIcon icon={faSun} />
+                                    </div>
+                                ) : (
+                                    <div>
+                                        <FontAwesomeIcon icon={faMoon} />
+                                    </div>
+                                )
+                            }
+                        </SubHeaderDiv>
+                    </Header>
                     <Main>
                         <SlogunBig>HACK YOUR LIFE</SlogunBig>
                         <SlogunSmall>
