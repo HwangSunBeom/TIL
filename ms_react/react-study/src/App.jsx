@@ -60,7 +60,7 @@ function App() {
                     <Main>
                         <SlogunBig>HACK YOUR LIFE</SlogunBig>
                         <SlogunSmall>
-                            내 아이디어를 내 손으로 실현한다.
+                            내 아이디어를 내 손으로 실현한다!
                         </SlogunSmall>
                         <PostSection>
                             <PostTitleDiv>
