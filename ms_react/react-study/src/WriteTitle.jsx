@@ -1,4 +1,6 @@
 import React from "react";
+import { PostTitle,
+  PostTitleDiv,} from './styledComponent';
 
 function WriteTitle(props) {
   return (

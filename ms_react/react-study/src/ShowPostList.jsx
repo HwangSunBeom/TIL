@@ -18,7 +18,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import loadingIcon from "./loading.svg";
 import EachPost from "./EachPost";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 const initialPostList = [
@@ -34,12 +34,12 @@ function ShowPostList() {
   // const isPost = false;
   const [postList, setPostList] = useState();
 
-  const addPost = () => {
+  const addPost = useCallback(() => {
     setPostList((postList) => [
       ...postList,
       { id: 4, title: "학보, 시사N 대학기자상 취재" },
     ]);
-  };
+  }, [postList]);
 
   const navigate = useNavigate();
   const goWrite = () => {

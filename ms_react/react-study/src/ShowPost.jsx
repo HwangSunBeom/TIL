@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useRef } from "react";
 import {
   PostSection,
   PostTitleDiv,
@@ -64,8 +64,15 @@ const ShowPost = () => {
     console.log("리뷰 개수를 세는 중...!");
     return repls.length;
   };
+
   //memo hook실습
   const replCount = useMemo(() => countRepls(repls), [repls]);
+
+  //useRef 실습
+  const replInput =useRef();
+  useEffect(()=>{
+    replInput.current.focus();
+  }, [])
 
   return (
     <div>
@@ -100,7 +107,10 @@ const ShowPost = () => {
         )}
 
         <WriterDiv>
-          <ReplInput onChange={onChange} value={repl}></ReplInput>
+          <ReplInput 
+            onChange={onChange} 
+            value={repl}
+            ref={replInput}></ReplInput>
           <ReplSubmitDiv>
             <span>입력</span>
           </ReplSubmitDiv>
