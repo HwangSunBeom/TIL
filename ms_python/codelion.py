@@ -68,3 +68,5 @@ information = {"고향":"수원", "취미":"영화관람", "좋아하는음식":
 for x, y in information.items():
     print(x)
     print(y)
+for x in range(30):
+    print(x)
