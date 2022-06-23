@@ -47,4 +47,4 @@ function WritePost() {
   );
 }
 
-export default WritePost;
+export default React.memo(WritePost);

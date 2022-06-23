@@ -10,4 +10,4 @@ function WriteTitle(props) {
   );
 }
 
-export default WriteTitle;
+export default React.memo(WriteTitle);

@@ -3,7 +3,10 @@ import random
 import time
 
 # List
+# foods = ["된찌", "피자", "제육볶음", "치킨", "떡볶이"]
+# print(foods.slice[2,4])
 # print(random.choice(["된찌", "피자", "제육볶음", "치킨", "떡볶이"]))
+
 
 # for 문
 # for x in range(30):
@@ -56,17 +59,16 @@ import time
 # del foods[1]
 # print(foods)
 
-for x in range(30):
-    print(x)
+# for x in range(30):
+#     print(x)
 
-foods = ["된찌", "피자", "제육볶음", "치킨", "떡볶이"]
-for x in range(len(foods)):
-    print(foods[x])
-for x in foods:
-    print(x)
-information = {"고향":"수원", "취미":"영화관람", "좋아하는음식":"국수"}
-for x, y in information.items():
-    print(x)
-    print(y)
-for x in range(30):
-    print(x)
+# foods = ["된찌", "피자", "제육볶음", "치킨", "떡볶이"]
+# for x in range(len(foods)):
+#     print(foods[x])
+
+# information = {"고향":"수원", "취미":"영화관람", "좋아하는음식":"국수"}
+# for x, y in information.items():
+#     print(x)
+#     print(y)
+# for x in range(30):
+#     print(x)
