@@ -20,6 +20,7 @@ import loadingIcon from "./loading.svg";
 import EachPost from "./EachPost";
 import { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const initialPostList = [
   { id: 1, title: ", 시사N 대학기자상 취재" },
@@ -33,6 +34,14 @@ function ShowPostList() {
   const [isPost, setIsPost] = useState(false);
   // const isPost = false;
   const [postList, setPostList] = useState();
+
+  useEffect(()=>{
+    axios.get('https://reactapitest.pythonanywhere.com/api/list/?page=1&page_size=10')
+    .then(response => {
+      console.log(response);
+    })
+  }, [])
+
 
   const addPost = useCallback(() => {
     setPostList((postList) => [

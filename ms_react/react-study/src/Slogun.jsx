@@ -1,4 +1,4 @@
-import React from './Footer';
+import React from 'react'
 import {
     SlogunBig,
     SlogunSection,
