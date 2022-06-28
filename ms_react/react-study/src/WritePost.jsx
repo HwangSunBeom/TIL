@@ -6,7 +6,7 @@ import {
   PostSubmitDiv,
   PostTitle,
   PostTitleDiv,
-  PostWriteDiv,
+  PostWriteDiv, 
   TitleInput,
 } from "./styledComponent";
 import WriteTitle from "./WriteTitle";
