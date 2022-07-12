@@ -29,7 +29,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<ShowPostList apiUrl={API_URL} />}></Route>
               <Route path="/write" element={<WritePost />}></Route>
-              <Route path="/post/:postID" element={<ShowPost />}></Route>
+              <Route path="/post/:postID" element={<ShowPost apiUrl={API_URL}/>}></Route>
             </Routes>
           </Main>
           <Footer />

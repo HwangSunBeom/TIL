@@ -1,5 +1,8 @@
+import axios from "axios";
+import { useParams } from 'react-router-dom';
 import React, { useEffect, useState, useMemo, useRef } from "react";
 import {
+
   PostSection,
   PostTitleDiv,
   PostTitle,
@@ -32,7 +35,8 @@ const replData = [
   { id: 3, content: `멋쟁이 사자처럼 최고!` },
 ];
 
-const ShowPost = () => {
+const ShowPost = ({ apiUrl }) => {
+  const Params = useParams();
   const [post, setPost] = useState(null);
   const [repls, setRepls] = useState([]);
   const [postLoading, setPostLoading] = useState(true);
@@ -113,6 +117,14 @@ const ShowPost = () => {
 
   //useRef 실습
   const replInput = useRef();
+
+  useEffect(()=>{
+    axios.get(`${apiUrl}posts/${Params.postID}`)
+      .then(response=>{
+        console.log(response)
+      })
+  }, [])
+
   useEffect(() => {
     replInput.current.focus();
   }, []);

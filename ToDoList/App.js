@@ -109,7 +109,6 @@ export default function App() {
               <Text style={styles.toDoText}>{toDos[key].text}</Text>
               <TouchableOpacity onPress={()=>deleteToDo(key)}>
                 <Fontisto name="trash" size={18} color={theme.grey} />
-                <Text>👋🏻</Text>
               </TouchableOpacity>
             </View>
           ) : null
