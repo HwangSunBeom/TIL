@@ -40,7 +40,8 @@
  
    return (
      <View>
-       <Text>Welcome {user.email}</Text>
+       {/* <Text>Welcome {user.email}</Text> */}
+       <Text>김민주</Text>
      </View>
    );
  }
