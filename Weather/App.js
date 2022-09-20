@@ -29,6 +29,7 @@ export default function App() {
   const [city, setCity] = useState("loading...");
   const [days, setDays] = useState([]);
   const [ok, setOk] = useState(true);
+  
   const getWeather = async () => {
     const { granted } = await Location.requestForegroundPermissionsAsync();
     if (!granted) {
