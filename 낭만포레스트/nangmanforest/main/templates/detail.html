@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contents</title>
+</head>
+<body>
+    <header>
+        <div id="NangMan">
+            <h4>조져봐요</h4>
+            <h1>낭만의 숲</h1> 
+        </div>
+
+        <div id="UserInfo">
+            <p>최다인님 안녕하세요</p>
+            <p>낭만력 16522</p>
+        </div>
+    </header>
+
+    <!-- base에 추가로 들어갈 내용(여기서부터 detail) -->
+    {% block content %}
+    <h2>낭만 스토리</h2>
+    <br>
+    <div>
+        <h3>{{detail_nangman.title}} / {{detail_nangman.writer}}</h3>
+        <p>내용 : {{detail_nangman.content}}</p>
+        <p><img src = "{{detail_nangman.image.url}}" alt="이미지"></p>
+        <p>달성 조건 : {{detail_nangman.quest}}</p>
+        <p>참여 낭만가 : {{detail_nangman.user}}</p>
+        <p>좋아요 / 찜 : {{detail_nangman.liker_users}}</p>
+        
+
+        {% if user.id == detail_nangman.writer %}
+        <div>
+            <a href="{% url 'edit' detail_nangman.id %}">수정하기</a>
+            <a href="{% url 'delete' detail_nangman.id %}">삭제하기</a>
+        </div>
+        {% endif %}
+
+    </div>
+    {% endblock %}
+
+
+    <h4>낭만 스토리</h4>
+
+    <div>
+        <p>한강에서 치맥하기</p>
+        <p>낭만녕훈</p>
+
+        <div>
+            <p>낭만의 정석! 한강에서 치킨에 맥주를 마셔보자!</p>
+            <p>달성 조건 : 한강에서 치맥 사진 찍어 올리기</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

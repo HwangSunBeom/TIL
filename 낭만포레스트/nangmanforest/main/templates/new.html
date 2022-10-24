@@ -1,0 +1,25 @@
+<!-- 나중에 가져다 쓸 템플릿 상속 -->
+{% extends 'base.html' %}
+
+<head>
+    <!-- 스태틱 불러오기 -->
+    {% load static %}
+    <!-- 스태틱 css 파일 적용 -->
+    {% block extrahead %}
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+    {% endblock %}
+</head>
+
+<!-- base에 추가로 들어갈 콘텐츠(여기서 부터 new) -->
+{% block content %}
+
+<form action="{%url 'create' %}" method="POST" enctype="multipart/form-data">
+    {%csrf_token%}
+    <p> 낭만 제목 : <input type="text" name="title"></p>
+    <p> 사진 : <input type="file" name="image"></p>
+    <p> 낭만 설명 : <textarea name="content"></textarea></p>
+    <p> 낭만 달성 조건 : <input type="text" name="quest"></p>
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

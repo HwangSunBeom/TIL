@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="NangMan">
+            <img src="../img/NangManForest.svg" alt="logo"> 
+        </div>
+
+        <div id="UserInfo">
+            {% if user.is_authenticated %}
+            <p>{{user.username}}님 안녕하세요</p>
+            {% endif %}
+            <p>낭만력 16522</p>
+        </div>
+    </header>
+
+    <div id="Mission">
+        <h3>인기 낭만 미션</h3>
+        <ul>
+            <li>
+                <h5>한강에서 치맥하기</h5>
+                <p>낭만녕훈</p>
+                <p>173명 도전 중</p>
+                <p>+500 낭만력</p>
+                <p>+1000 포인트</p>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="Ranking">
+        <h3>유저 랭킹</h3>
+        <ul>
+            <li>
+                <h5>1위</h5>
+                <p>이파오차이</p>
+                <p>낭만력 1,789,645</p>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="LimitedBanner">
+        <h3>Today 리미티드 낭만</h3>
+        <p>오늘은 말복! 한강에서 치킨 먹기!</p>
+        <p>+500 낭만력</p>
+        <p>+1000포인트</p>
+    </div>
+
+</body>
+</html>
