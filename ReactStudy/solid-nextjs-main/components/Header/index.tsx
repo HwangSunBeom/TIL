@@ -39,7 +39,8 @@ const Header = () => {
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              // src="/images/logo/logo-dark.svg"
+              src="/images/logo/tomung.png"
               alt="logo"
               width={119.03}
               height={30}
@@ -158,7 +159,7 @@ const Header = () => {
               href="https://github.com/NextJSTemplates/solid-nextjs"
               className="text-waterloo text-regular font-medium hover:text-primary"
             >
-            GitHub Repo 🌟
+              GitHub Repo 🌟
             </Link>
 
             <Link

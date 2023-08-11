@@ -40,15 +40,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    // src="/images/logo/logo-dark.svg"
+                    src="/images/logo/tomung.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
 
-                <p className="mt-5 mb-10">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <p className="mt-5 mb-10">개토뭉 진짜 줠라 귀욥따 ㅠㅠ</p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
                   contact
@@ -57,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
-                  hello@solid.com
+                  wsbs9805@naver.com
                 </a>
               </motion.div>
 
@@ -211,7 +210,10 @@ const Footer = () => {
                         className="w-full dark:bg-black border border-stroke dark:border-strokedark shadow-solid-11 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-3 px-6"
                       />
 
-                      <button aria-label="signup to newsletter" className="absolute right-0 p-4">
+                      <button
+                        aria-label="signup to newsletter"
+                        className="absolute right-0 p-4"
+                      >
                         <svg
                           className="fill-[#757693] dark:fill-white hover:fill-primary"
                           width="20"
