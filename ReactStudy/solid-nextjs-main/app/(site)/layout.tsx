@@ -49,6 +49,7 @@ export default function RootLayout({
 }) {
   const queryClient = new QueryClient();
 
+  console.log(spaceRef);
   return (
     <html lang="eng">
       <body className={`dark:bg-black`}>
@@ -59,6 +60,7 @@ export default function RootLayout({
               attribute="class"
               defaultTheme="light"
             >
+              <img src={`${spaceRef.bucket}/${spaceRef.fullPath}`} />
               <Lines />
               <Header />
               <ToasterContext />
