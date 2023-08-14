@@ -17,6 +17,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage, ref } from "firebase/storage";
+import Image from "next/image";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -60,7 +61,18 @@ export default function RootLayout({
               attribute="class"
               defaultTheme="light"
             >
-              <img src={`${spaceRef.bucket}/${spaceRef.fullPath}`} />
+              <Image
+                // src="/images/logo/logo-dark.svg"
+                // src="/images/logo/tomung.png"
+                src="/images/logo/tomung.png"
+                alt="logo"
+                width={119.03}
+                height={30}
+                className="w-full hidden dark:block"
+              />
+              <video>
+                <source src="" type="video/mp4" />
+              </video>
               <Lines />
               <Header />
               <ToasterContext />
