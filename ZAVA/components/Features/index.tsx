@@ -15,9 +15,8 @@ const Feature = () => {
             headerInfo={{
               title: "SOLID FEATURES",
               subtitle: "Core Features of Solid",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `Today, many churches, schools, and event venues install and use cameras.
+              Even if not all, most cameras are installed and used on the walls or mezzanine balustrade.`,
             }}
           />
           {/* <!-- Section Title End --> */}
