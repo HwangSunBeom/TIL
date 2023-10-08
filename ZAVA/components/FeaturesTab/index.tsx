@@ -5,6 +5,7 @@ import featuresTabData from "./featuresTabData";
 import FeaturesTabItem from "./FeaturesTabItem";
 
 import { motion } from "framer-motion";
+import SectionHeader from "../Common/SectionHeader";
 
 const FeaturesTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
@@ -28,6 +29,19 @@ const FeaturesTab = () => {
               alt="Dotted Shape"
             />
           </div>
+          
+          <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+          {/* <!-- Section Title Start --> */}
+          <SectionHeader
+            headerInfo={{
+              // title: `INTEGRATIONS`,
+              subtitle: `What makes cameras and video footages tremble?`,
+              // description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+            }}
+          />
+
+          {/* <!-- Section Title End --> */}
+        </div>
 
           {/* <!-- Tab Menues Start --> */}
           <motion.div
@@ -56,14 +70,15 @@ const FeaturesTab = () => {
                   : ""
               }`}
             >
-              <div className="w-12.5 h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+              {/* <div className="w-12.5 h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center"> */}
+              <div className="w-12.5 h-12.5 rounded-[50%] dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
                 <p className="text-black dark:text-white font-medium text-metatitle3">
                   01
                 </p>
               </div>
               <div className="lg:w-auto md:w-3/5">
                 <h5 className="text-black dark:text-white text-sm xl:text-regular font-medium">
-                  Clean User Interface
+                  Step Impact
                 </h5>
               </div>
             </div>
@@ -75,14 +90,14 @@ const FeaturesTab = () => {
                   : ""
               }`}
             >
-              <div className="w-12.5 h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+              <div className="w-12.5 h-12.5 rounded-[50%] dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
                 <p className="text-black dark:text-white font-medium text-metatitle3">
                   02
                 </p>
               </div>
               <div className="lg:w-auto md:w-3/5">
                 <h5 className="text-black dark:text-white text-sm xl:text-regular font-medium">
-                  Essential Business Pages
+                  Air-conditioning Impact
                 </h5>
               </div>
             </div>
@@ -94,14 +109,52 @@ const FeaturesTab = () => {
                   : ""
               }`}
             >
-              <div className="w-12.5 h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+              <div className="w-12.5 h-12.5 rounded-[50%] dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
                 <p className="text-black dark:text-white font-medium text-metatitle3">
                   03
                 </p>
               </div>
               <div className="lg:w-auto md:w-3/5">
                 <h5 className="text-black dark:text-white text-sm xl:text-regular font-medium">
-                  Fully Functional Integrations
+                Door Impact
+                </h5>
+              </div>
+            </div>
+            <div
+              onClick={() => setCurrentTab("tabFour")}
+              className={`relative cursor-pointer w-full md:w-auto border-b last:border-0 md:border-0 border-stroke dark:border-strokedark flex items-center gap-4 py-2 xl:py-5 px-6 xl:px-13.5 ${
+                currentTab === "tabFour"
+                  ? "active before:w-full before:h-1 before:bg-primary before:absolute before:bottom-0 before:left-0 before:rounded-tl-[4px] before:rounded-tr-[4px]"
+                  : ""
+              }`}
+            >
+              <div className="w-12.5 h-12.5 rounded-[50%] dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+                <p className="text-black dark:text-white font-medium text-metatitle3">
+                  04
+                </p>
+              </div>
+              <div className="lg:w-auto md:w-3/5">
+                <h5 className="text-black dark:text-white text-sm xl:text-regular font-medium">
+                Traffic Impact
+                </h5>
+              </div>
+            </div>
+            <div
+              onClick={() => setCurrentTab("tabFive")}
+              className={`relative cursor-pointer w-full md:w-auto border-b last:border-0 md:border-0 border-stroke dark:border-strokedark flex items-center gap-4 py-2 xl:py-5 px-6 xl:px-13.5 ${
+                currentTab === "tabFive"
+                  ? "active before:w-full before:h-1 before:bg-primary before:absolute before:bottom-0 before:left-0 before:rounded-tl-[4px] before:rounded-tr-[4px]"
+                  : ""
+              }`}
+            >
+              <div className="w-12.5 h-12.5 rounded-[50%] dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+                <p className="text-black dark:text-white font-medium text-metatitle3">
+                  05
+                </p>
+              </div>
+              <div className="lg:w-auto md:w-3/5">
+                <h5 className="text-black dark:text-white text-sm xl:text-regular font-medium">
+                Audio-effect Impact
                 </h5>
               </div>
             </div>

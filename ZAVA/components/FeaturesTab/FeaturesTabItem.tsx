@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FeatureTab } from "@/types/featureTab";
 import Image from "next/image";
 
+interface IntrinsicElements {
+  "lottie-player": any;
+}
+
 const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
   const { title, desc1, desc2, image, imageDark } = featureTab;
+
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <>
@@ -16,13 +25,24 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
           <p className="w-11/12">{desc2}</p>
         </div>
         <div className="hidden md:block md:w-1/2 relative mx-auto aspect-[562/366] max-w-[550px]">
-          <Image src={image} alt={title} fill className="dark:hidden" />
+          {/* <Image src={image} alt={title} fill className="dark:hidden" />
           <Image
             src={imageDark}
             alt={title}
             fill
             className="hidden dark:block"
-          />
+          /> */}
+          {/* <Lottie animationData={image} /> */}
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          // controls
+          loop
+          mode="normal"
+          src={image}
+          // style={{ width: "300px", height: "300px" }}
+        />
         </div>
       </div>
     </>

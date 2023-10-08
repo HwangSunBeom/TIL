@@ -20,6 +20,13 @@ const Hero = () => {
               {/* <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
                 🔥 Solid - A Complete SaaS Web Template
               </h4> */}
+              <Image
+                  src="/images/logo/zava_logo.svg"
+                  alt="zava_logo"
+                  width={400}
+                  height={246}
+                  className="mb-5"
+                />
               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 PHYSICAL STABILIZER <br/>
                 FOR ALL INSTALLED CAMERAS
