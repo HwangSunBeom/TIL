@@ -3,7 +3,7 @@ import { Blog } from "@/types/blog";
 const BlogData: Blog[] = [
   { 
     _id: 1,
-    mainImage: "/images/blog/blog-01.png",
+    mainImage: "/images/27_광주_성지교회_영문/슬라이드2.png",
     title: "Free advertising for your online business",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",

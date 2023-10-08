@@ -27,7 +27,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-1/2 lg:w-1/4"
+                className="animate_top w-1/2 lg:w-1/2"
               >
                 <a href="index.html" className="relative">
                   <Image
@@ -46,22 +46,50 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mt-5 mb-10">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="mt-5 mb-10 whitespace-pre-wrap">
+                  WE SOLVE VIDEO FOOTAGE TREMBLING PROBLEMS. <br/>
+                  WE INVENT NEW SOLUTIONS TO IMPROVE OUR LIVES.
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
-                  contact
+                  Phone
                 </p>
                 <a
-                  href="#"
+                  href="tel:+821079259111"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
-                  hello@solid.com
+                  +82 10 7925 9111
                 </a>
+                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 mt-3">
+                  E-mail
+                </p>
+                <a
+                  href="mailto:vava.innovation@gmail.com"
+                  className="text-black dark:text-white font-medium text-itemtitle"
+                >
+                  vava.innovation@gmail.com
+                </a>
+                {/* <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 mt-3">
+                  Address
+                </p>
+                <a
+                  href="mailto:vava.innovation@gmail.com"
+                  className="text-black dark:text-white font-medium text-itemtitle"
+                >
+                  505-104, 63, HEOLLEUNG-RO 590-GIL, GANGNAM-GU, SEOUL, SOUTH KOREA
+                </a> */}
+                {/* <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 mt-3">
+                  BUSINESS REGISTRATION NO.
+                </p>
+                <a
+                  href="mailto:vava.innovation@gmail.com"
+                  className="text-black dark:text-white font-medium text-itemtitle"
+                >
+                  388-43-00606
+                </a> */}
               </motion.div>
 
-              <div className="w-full lg:w-2/3 xl:w-7/12 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
+              <div className="w-full lg:w-1/3 xl:w-1/3 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
                 <motion.div
                   variants={{
                     hidden: {
@@ -95,28 +123,28 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/blog"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Product
+                        Blog
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Careers
                       </a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <a
                         href="#"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Pricing
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </motion.div>
 
@@ -143,7 +171,7 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="inline-block hover:text-primary mb-3"
@@ -166,10 +194,10 @@ const Footer = () => {
                       >
                         Our Blog
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
-                        href="#"
+                        href="/contact"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Contact Us
@@ -178,7 +206,7 @@ const Footer = () => {
                   </ul>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                   variants={{
                     hidden: {
                       opacity: 0,
@@ -235,7 +263,7 @@ const Footer = () => {
                       </button>
                     </div>
                   </form>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </div>
@@ -243,7 +271,7 @@ const Footer = () => {
 
           {/* <!-- Footer Bottom --> */}
           <div className="border-t border-stroke dark:border-strokedark flex flex-wrap flex-col lg:flex-row items-center justify-center lg:justify-between gap-5 lg:gap-0 py-7">
-            <motion.div
+            {/* <motion.div
               variants={{
                 hidden: {
                   opacity: 0,
@@ -278,7 +306,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               variants={{
@@ -320,6 +348,7 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-5">
+                {/* 페북 */}
                 <li>
                   <a href="#">
                     <svg
@@ -344,31 +373,17 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
+                {/* 인스타 */}
                 <li>
                   <a href="#">
-                    <svg
-                      className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_48_1502)">
-                        <path
-                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
-                          fill=""
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_48_1502">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.264.058-1.644.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.059 1.646-.07 4.85-.07zm0-2.163C6.075 0 5.22 0 4.29.049c-1.225.049-2.38.38-3.336 1.336-.956.956-1.287 2.111-1.336 3.336-.049.93-.049 1.785-.049 7.288s0 6.358.049 7.289c.049 1.225.38 2.38 1.336 3.336.956.956 2.111 1.287 3.336 1.336.93.048 1.785.048 7.289.048s6.358 0 7.289-.049c1.225-.049 2.38-.38 3.336-1.336.956-.956 1.287-2.111 1.336-3.336.049-.93.049-1.785.049-7.289s0-6.358-.049-7.288c-.049-1.225-.38-2.38-1.336-3.336-.956-.956-2.111-1.287-3.336-1.336-.93-.048-1.785-.048-7.289-.048z"/>
+                      <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                      <path d="M18.394 6.015a1.394 1.394 0 1 0 0 2.787 1.394 1.394 0 0 0 0-2.787z"/>
                     </svg>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <svg
                       className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
@@ -391,8 +406,8 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#">
                     <svg
                       className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
@@ -411,7 +426,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>

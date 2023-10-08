@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
@@ -42,28 +42,23 @@ const Pricing = () => {
                   /month
                 </span> */}
               </h3>
-              <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
+              {/* <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
               for any PTZ cams and light handycams
-              </h4>
-              {/* <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p> */}
-
+              </h4> */}
+                            <h5 className="text-black dark:text-white font-medium text-para3">
+              Weight Limit: <br/>
+                ~ 6.62 lbs (3 kg)
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
-                {/* 이미지로 대체 */}
-                {/* <ul>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
-                    Exclusive Support
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
-                    Custom Branding Strategy
-                  </li>
-                </ul> */}
+                <Image
+                      src="/images/svg/ZAVA_type_lineup_P line.svg"
+                      alt="prod-types"
+                      width={500}
+                      height={500}
+                    />
               </div>
+              <p>for any PTZ cams and light handycams</p>
+
 
               {/* <button
                 aria-label="purchase this plan"
@@ -99,25 +94,19 @@ const Pricing = () => {
               {/* <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
                 for professional hand-held cams with Pan tilt system
               </h4> */}
-              <p>for professional hand-held cams with Pan tilt system</p>
-
+              <h5 className="text-black dark:text-white font-medium text-para3">
+                Weight Limit: <br/>
+                ~ 13.23 lbs (6 kg)
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
-                {/* <ul>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Exclusive Support
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
-                    Custom Branding Strategy
-                  </li>
-                </ul> */}
+              <Image
+                    src="/images/svg/ZAVA_type_lineup_C line.svg"
+                    alt="prod-types"
+                    width={500}
+                    height={500}
+                  />
               </div>
-
+              <p>for professional hand-held cams with Pan tilt system</p>
               {/* <button
                 aria-label="purchase this plan"
                 className="inline-flex items-center gap-2.5 text-primary dark:text-white dark:hover:text-primary font-medium transition-all duration-300"
@@ -149,24 +138,48 @@ const Pricing = () => {
                 for ENG/EFP Cams
                 with pan tilt system
               </h4> */}
-              <p>for ENG/EFP Cams with pan tilt system</p>
-
+              <h5 className="text-black dark:text-white font-medium text-para3">
+                Weight Limit: <br/>
+                ~ 19.85 lbs (9 kg)
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
-                {/* <ul>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Exclusive Support
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Custom Branding Strategy
-                  </li>
-                </ul> */}
+              <Image
+                    src="/images/svg/ZAVA_type_lineup_E line.svg"
+                    alt="prod-types"
+                    width={500}
+                    height={500}
+                  />
               </div>
+              <p>for ENG/EFP Cams with pan tilt system</p>
+            </div>
+
+            {/* <!-- Pricing Item --> */}
+            <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
+              <h4 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
+              over E
+                {/* <span className="text-regular text-waterloo dark:text-manatee">
+                  /month
+                </span> */}
+              </h4>
+              {/* <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
+                for ENG/EFP Cams
+                with pan tilt system
+              </h4> */}
+
+              <h5 className="text-black dark:text-white font-medium text-para3">
+                Weight Limit: <br/>
+                19.85 lbs (9 kg) ~
+              </h5>
+              <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
+              <Image
+                    src="/images/svg/ZAVA_type_lineup_over E line.svg"
+                    alt="prod-types"
+                    width={500}
+                    height={500}
+                  />
+              </div>
+              <p>Contact us directly</p>
+
 
               {/* <button
                 aria-label="purchase this plan"

@@ -25,7 +25,7 @@ const Hero = () => {
                   alt="zava_logo"
                   width={400}
                   height={246}
-                  className="mb-5"
+                  className="mb-"
                 />
               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 PHYSICAL STABILIZER <br/>
@@ -89,13 +89,13 @@ const Hero = () => {
                 <div className=" relative aspect-[700/444] w-full">
                   <Image
                     className="dark:hidden shadow-solid-l"
-                    src="/images/hero/hero-light.svg"
+                    src="/images/svg/zava product sample.svg"
                     alt="Hero"
                     fill
                   />
                   <Image
                     className="hidden dark:block shadow-solid-l"
-                    src="/images/hero/hero-dark.svg"
+                    src="/images/svg/zava product sample.svg"
                     alt="Hero"
                     fill
                   />

@@ -1,10 +1,16 @@
 "use client";
 
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const About = () => {
+
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
@@ -30,13 +36,13 @@ const About = () => {
               className="animate_left hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="/images/about/about-light-01.svg"
+                src="/images/svg/ZAVA_IIChurch_source.svg"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.svg"
+                src="/images/svg/ZAVA_IIChurch_source.svg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -208,13 +214,13 @@ const About = () => {
               className="animate_right hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="./images/svg/ZAVA_image based source_PTZ lens.svg"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="./images/svg/ZAVA_image based source_PTZ lens.svg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -248,13 +254,13 @@ const About = () => {
               className="animate_left hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="/images/about/about-light-01.svg"
+                src="/images/svg/ZAVA_decrease.svg"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.svg"
+                src="/images/svg/ZAVA_decrease.svg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -419,7 +425,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
-              <Image
+              {/* <Image
                 src="./images/about/about-light-02.svg"
                 alt="About"
                 className="dark:hidden"
@@ -430,7 +436,15 @@ const About = () => {
                 alt="About"
                 className="hidden dark:block"
                 fill
-              />
+              /> */}
+              <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="./images/lottie/ZAVA_video footage tremble.json"
+        />
             </motion.div>
           </div>
         </div>

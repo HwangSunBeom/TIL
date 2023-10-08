@@ -38,7 +38,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row gap-8 xl:gap-20 md:justify-between">
-            <motion.div
+            {/* <motion.div
               variants={{
                 hidden: {
                   opacity: 0,
@@ -135,7 +135,7 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               variants={{
@@ -153,24 +153,24 @@ const Contact = () => {
               whileInView="visible"
               transition={{ duration: 2, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15"
+              className="animate_top w-full md:w-2/5 lg:w-[100%] md:p-7.5 xl:pt-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
-                Find us
+                Contact us
               </h2>
 
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Our Loaction
                 </h4>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>505-104, 63, HEOLLEUNG-RO 590-GIL, GANGNAM-GU, SEOUL, SOUTH KOREA</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Email Address
                 </h4>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="mailto:vava.innovation@gmail.com">vava.innovation@gmail.com</a>
                 </p>
               </div>
               <div>
@@ -178,7 +178,11 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                <a
+                  href="tel:+821079259111"
+                >
+                  +82 10 7925 9111
+                </a>
                 </p>
               </div>
             </motion.div>
