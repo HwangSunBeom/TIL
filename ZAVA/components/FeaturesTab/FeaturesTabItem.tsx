@@ -1,11 +1,6 @@
 import React, { useRef } from "react";
 import { FeatureTab } from "@/types/featureTab";
 import Image from "next/image";
-import { LottiePlayer } from "@lottiefiles/lottie-player";
-
-interface IntrinsicElements {
-  "lottie-player": any;
-}
 
 const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
   const { title, desc1, desc2, image, imageDark } = featureTab;
