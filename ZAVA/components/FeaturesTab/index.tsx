@@ -34,9 +34,9 @@ const FeaturesTab = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              // title: `INTEGRATIONS`,
+              title: ``,
               subtitle: `What makes cameras and video footages tremble?`,
-              // description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              description: ``,
             }}
           />
 

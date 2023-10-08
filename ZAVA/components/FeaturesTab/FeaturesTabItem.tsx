@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { FeatureTab } from "@/types/featureTab";
 import Image from "next/image";
+import { LottiePlayer } from "@lottiefiles/lottie-player";
 
 interface IntrinsicElements {
   "lottie-player": any;
@@ -37,11 +38,9 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
           id="firstLottie"
           ref={ref}
           autoplay
-          // controls
           loop
           mode="normal"
           src={image}
-          // style={{ width: "300px", height: "300px" }}
         />
         </div>
       </div>
