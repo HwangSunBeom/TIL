@@ -28,14 +28,14 @@ export default function Home() {
       {/* <Feature /> */}
       <About />
       <FeaturesTab />
-      <FunFact />
-      <Integration />
-      <CTA />
-      <FAQ />
-      <Testimonial />
+      {/* <FunFact /> */}
+      {/* <Integration /> */}
+      {/* <CTA /> */}
+      {/* <Testimonial /> */}
       <Pricing />
       {/* <Contact /> */}
       <Blog />
+      <FAQ />
     </main>
   );
 }

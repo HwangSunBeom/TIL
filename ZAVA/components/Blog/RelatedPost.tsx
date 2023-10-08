@@ -26,7 +26,6 @@ const RelatedPost = async () => {
               </div>
               <h5 className="font-medium text-md text-black dark:text-white hover:text-primary dark:hover:text-primary transition-all duration-300">
                 <Link href={`/blog/blog-details`}>
-                  {" "}
                   {post.title.slice(0, 40)}...
                 </Link>
               </h5>

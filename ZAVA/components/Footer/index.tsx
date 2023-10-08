@@ -33,14 +33,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/zava_logo.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/zava_logo.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />
@@ -298,7 +298,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; 2025 Solid. All rights reserved</p>
+              <p>&copy; Copyright 2020. VAVA Co. All rights reserved.</p>
             </motion.div>
 
             <motion.div
