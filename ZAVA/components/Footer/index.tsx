@@ -175,7 +175,7 @@ const Footer = () => {
                       <a 
                       href="tel:+821079259111" 
                       className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        WhatsApp
+                        Whats App
                       </a>
                     </li>
                     <li>

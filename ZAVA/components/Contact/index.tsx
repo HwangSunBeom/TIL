@@ -180,7 +180,7 @@ const Contact = () => {
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Phone Number - WhatsApp available
+                  Phone Number - Whats App available
                 </h4>
                 <p className="text-gray dark:text-white font-medium text-para3">
                   <a href="tel:+821079259111">+82 10 7925 9111</a>
