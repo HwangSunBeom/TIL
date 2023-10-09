@@ -173,7 +173,7 @@ const Contact = () => {
                   <a href="mailto:vava.innovation@gmail.com">vava.innovation@gmail.com</a>
                 </p>
               </div>
-              <div>
+              <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Phone Number
                 </h4>
@@ -182,6 +182,54 @@ const Contact = () => {
                   href="tel:+821079259111"
                 >
                   +82 10 7925 9111
+                </a>
+                </p>
+              </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Linktree
+                </h4>
+                <p className="text-gray dark:text-white font-medium text-para3">
+                <a
+                  href="https://link.inpock.co.kr/vava.innovation" target="_blank"
+                >
+                  Go To Linktree
+                </a>
+                </p>
+              </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Facebook(ENG)
+                </h4>
+                <p className="text-gray dark:text-white font-medium text-para3">
+                <a
+                  href="https://www.facebook.com/zava.vib/" target="_blank"
+                >
+                  Go To Facebook(ENG)
+                </a>
+                </p>
+              </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Facebook(KOR)
+                </h4>
+                <p className="text-gray dark:text-white font-medium text-para3">
+                <a
+                  href="https://www.facebook.com/za.va.33633/" target="_blank"
+                >
+                  Go To Facebook(KOR)
+                </a>
+                </p>
+              </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Case Archive(KOR/JPN)
+                </h4>
+                <p className="text-gray dark:text-white font-medium text-para3">
+                <a
+                  href="https://drive.google.com/drive/folders/11SM8rDkpCp6dqYjw9_bKOg5YoC7P3s7M" target="_blank"
+                >
+                  Go To Case Archive
                 </a>
                 </p>
               </div>

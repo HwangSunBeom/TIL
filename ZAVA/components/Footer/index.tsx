@@ -197,7 +197,7 @@ const Footer = () => {
                     </li> */}
                     <li>
                       <a
-                        href="/contact"
+                        href="/support"
                         className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3"
                       >
                         Contact Us
@@ -326,7 +326,8 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p className="text-gray dark:text-white font-medium text-para3">&copy; Copyright 2020. VAVA Co. All rights reserved.</p>
+              <p className="text-gray dark:text-white font-medium text-para3">Copyright 2020. VAVA Co. All rights reserved.</p>
+              {/* <p className="text-gray dark:text-white font-medium text-para3">&copy; Copyright 2020. VAVA Co. All rights reserved.</p> */}
             </motion.div>
 
             <motion.div
@@ -350,7 +351,7 @@ const Footer = () => {
               <ul className="flex items-center gap-5">
                 {/* 페북 */}
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/zava.vib/" target='_blank' >
                     <svg
                       className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
                       width="24"
@@ -374,7 +375,7 @@ const Footer = () => {
                   </a>
                 </li>
                 {/* 인스타 */}
-                <li>
+                {/* <li>
                   <a href="#">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300">
                       <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.264.058-1.644.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.059 1.646-.07 4.85-.07zm0-2.163C6.075 0 5.22 0 4.29.049c-1.225.049-2.38.38-3.336 1.336-.956.956-1.287 2.111-1.336 3.336-.049.93-.049 1.785-.049 7.288s0 6.358.049 7.289c.049 1.225.38 2.38 1.336 3.336.956.956 2.111 1.287 3.336 1.336.93.048 1.785.048 7.289.048s6.358 0 7.289-.049c1.225-.049 2.38-.38 3.336-1.336.956-.956 1.287-2.111 1.336-3.336.049-.93.049-1.785.049-7.289s0-6.358-.049-7.288c-.049-1.225-.38-2.38-1.336-3.336-.956-.956-2.111-1.287-3.336-1.336-.93-.048-1.785-.048-7.289-.048z"/>
@@ -382,7 +383,7 @@ const Footer = () => {
                       <path d="M18.394 6.015a1.394 1.394 0 1 0 0 2.787 1.394 1.394 0 0 0 0-2.787z"/>
                     </svg>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a href="#">
                     <svg
