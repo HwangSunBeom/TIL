@@ -14,7 +14,7 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
-                subtitle: `PRICE & POLICY`,
+                subtitle: `Price & Policy`,
                 description: `Prices vary depending on the weight and specifications of your camera and remote control device.
 
                 Sometimes special connectors should be installed depending on your environment and situation. In this case, their price will be charged separately. The price is set after visiting and meeting you.`,
