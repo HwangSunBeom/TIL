@@ -14,7 +14,7 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
+                subtitle: `PRICE & POLICY`,
                 description: `Prices vary depending on the weight and specifications of your camera and remote control device.
 
                 Sometimes special connectors should be installed depending on your environment and situation. In this case, their price will be charged separately. The price is set after visiting and meeting you.`,
@@ -48,6 +48,10 @@ const Pricing = () => {
                             <h5 className="text-black dark:text-white font-medium text-para3">
               Weight Limit: <br/>
                 ~ 6.62 lbs (3 kg)
+              </h5>
+              <br/>
+              <h5 className="text-black dark:text-white font-medium text-para3">
+              Price: $
               </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <Image
@@ -98,6 +102,10 @@ const Pricing = () => {
                 Weight Limit: <br/>
                 ~ 13.23 lbs (6 kg)
               </h5>
+              <br/>
+              <h5 className="text-black dark:text-white font-medium text-para3">
+              Price: $$
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
               <Image
                     src="/images/svg/ZAVA_type_lineup_C line.svg"
@@ -106,7 +114,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p className="text-gray dark:text-white font-medium text-para4">for professional hand-held cams with pan tilt system</p>
+              <p className="text-gray dark:text-white font-medium text-para3">for professional hand-held cams with pan tilt system</p>
               {/* <button
                 aria-label="purchase this plan"
                 className="inline-flex items-center gap-2.5 text-primary dark:text-white dark:hover:text-primary font-medium transition-all duration-300"
@@ -142,6 +150,10 @@ const Pricing = () => {
                 Weight Limit: <br/>
                 ~ 19.85 lbs (9 kg)
               </h5>
+              <br/>
+              <h5 className="text-black dark:text-white font-medium text-para3">
+              Price: $$$
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
               <Image
                     src="/images/svg/ZAVA_type_lineup_E line.svg"
@@ -150,7 +162,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p className="text-gray dark:text-white font-medium text-para4">for ENG/EFP cams with pan tilt system</p>
+              <p className="text-gray dark:text-white font-medium text-para3">for ENG/EFP cams with pan tilt system</p>
             </div>
 
             {/* <!-- Pricing Item --> */}
@@ -170,6 +182,10 @@ const Pricing = () => {
                 Weight Limit: <br/>
                 19.85 lbs (9 kg) ~
               </h5>
+              <br/>
+              <h5 className="text-black dark:text-white font-medium text-para3">
+              Price: $$$$
+              </h5>
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
               <Image
                     src="/images/svg/ZAVA_type_lineup_over E line.svg"
@@ -178,7 +194,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p className="text-gray dark:text-white font-medium text-para4">Contact us directly</p>
+              <p className="text-gray dark:text-white font-medium text-para3">Contact us directly</p>
 
 
               {/* <button
