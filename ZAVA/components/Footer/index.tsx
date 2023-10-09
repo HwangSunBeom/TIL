@@ -33,14 +33,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/zava_logo.svg"
+                    src="/images/logo/vava_logo.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/zava_logo.svg"
+                    src="/images/logo/vava_logo.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />
