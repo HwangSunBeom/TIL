@@ -156,7 +156,7 @@ const Contact = () => {
               className="animate_top w-full md:w-2/5 lg:w-[100%] md:p-7.5 xl:pt-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
-                Contact us
+                Contact Us
               </h2>
 
               <div className="mb-7 5">
@@ -180,7 +180,7 @@ const Contact = () => {
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Phone Number - Whats App available
+                  Phone Number - WhatsApp available
                 </h4>
                 <p className="text-gray dark:text-white font-medium text-para3">
                   <a href="tel:+821079259111">+82 10 7925 9111</a>
@@ -221,7 +221,7 @@ const Contact = () => {
                     href="https://link.inpock.co.kr/vava.innovation"
                     target="_blank"
                   >
-                    Go To Linktree
+                    Go To Link in Bio
                   </a>
                 </p>
               </div>

@@ -119,7 +119,7 @@ const About = () => {
       {/* <!-- ===== About End ===== --> */}
 
       {/* <!-- ===== About Two Start ===== --> */}
-      <section>
+      <section className="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 2xl:px-0 overflow-hidden">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -193,7 +193,7 @@ const About = () => {
 
       {/* <!-- ===== About Three Start ===== --> */}
       <section className="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
-        <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
           <motion.div
               variants={{
@@ -285,7 +285,7 @@ const About = () => {
                 </span> */}
               </h2>
               <p className="text-gray dark:text-white font-medium text-para3">
-              ZAVA reduces the video footage trembling by about 93% on average. We invented ZAVA to solve this trembling problem. We continue to improve and develop.
+              ZAVA reduces the video footage trembling by about 92% on average. We invented ZAVA to solve this trembling problem. We continue to improve and develop.
               </p>
             </motion.div>
             <motion.div

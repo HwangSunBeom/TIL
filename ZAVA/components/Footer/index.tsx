@@ -56,7 +56,7 @@ const Footer = () => {
                 </p>
                 <a
                   href="tel:+821079259111"
-                  className="text-black dark:text-white font-medium text-itemtitle"
+                  className="text-md text-black dark:text-white font-medium"
                 >
                   +82 10 7925 9111
                 </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </p>
                 <a
                   href="mailto:vava.innovation@gmail.com"
-                  className="text-black dark:text-white font-medium text-itemtitle"
+                  className="text-md text-black dark:text-white font-medium"
                 >
                   vava.innovation@gmail.com
                 </a>
@@ -148,70 +148,6 @@ const Footer = () => {
                   </ul>
                 </motion.div>
 
-                
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                    Channels
-                  </h4>
-                  <ul>
-                    <li>
-                      <a 
-                      href="tel:+821079259111" 
-                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        Whats App
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                      href="https://link.inpock.co.kr/vava.innovation"
-                      target="_blank"
-                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        Link in Bio
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                      href="https://www.facebook.com/zava.vib/"
-                      target="_blank"
-                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        Facebook (ENG)
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                      href="https://www.facebook.com/za.va.33633/"
-                      target="_blank"
-                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        Facebook (KOR)
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                      href="https://drive.google.com/drive/folders/11SM8rDkpCp6dqYjw9_bKOg5YoC7P3s7M"
-                      target="_blank"
-                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
-                        Case Archive(KOR/JPN)
-                      </a>
-                    </li>
-                  </ul>
-                </motion.div>
                 <motion.div
                   variants={{
                     hidden: {
@@ -265,6 +201,70 @@ const Footer = () => {
                         className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3"
                       >
                         Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </motion.div>
+                
+                <motion.div
+                  variants={{
+                    hidden: {
+                      opacity: 0,
+                      y: -20,
+                    },
+
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                    },
+                  }}
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 1, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="animate_top"
+                >
+                  <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
+                    Channels
+                  </h4>
+                  <ul>
+                    <li>
+                      <a 
+                      href="tel:+821079259111" 
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        WhatsApp
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                      href="https://www.facebook.com/zava.vib/"
+                      target="_blank"
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        Facebook (ENG)
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                      href="https://www.facebook.com/za.va.33633/"
+                      target="_blank"
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        Facebook (KOR)
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                      href="https://link.inpock.co.kr/vava.innovation"
+                      target="_blank"
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        Link in Bio
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                      href="https://drive.google.com/drive/folders/11SM8rDkpCp6dqYjw9_bKOg5YoC7P3s7M"
+                      target="_blank"
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        Case Archive (KOR/JPN)
                       </a>
                     </li>
                   </ul>

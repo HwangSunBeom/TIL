@@ -34,7 +34,7 @@ const FeaturesTab = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: ``,
+              title: `CAUSES OF TREMBLING`,
               subtitle: `What makes cameras and video footages tremble?`,
               description: ``,
             }}

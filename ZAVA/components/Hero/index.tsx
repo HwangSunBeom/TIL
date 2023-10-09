@@ -89,13 +89,13 @@ const Hero = () => {
                 <div className=" relative aspect-[444/444] w-full bg-none">
                   <Image
                     className="dark:hidden"
-                    src="/images/svg/zava product sample.svg"
+                    src="/images/svg/zava product sample_renew.png"
                     alt="Hero"
                     fill
                   />
                   <Image
                     className="hidden dark:block"
-                    src="/images/svg/zava product sample.svg"
+                    src="/images/svg/zava product sample_renew.png"
                     alt="Hero"
                     fill
                   />
