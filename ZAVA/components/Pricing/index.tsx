@@ -168,7 +168,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
               <h4 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-              over E
+              Over E
                 {/* <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span> */}

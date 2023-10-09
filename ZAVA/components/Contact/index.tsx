@@ -186,19 +186,6 @@ const Contact = () => {
                   <a href="tel:+821079259111">+82 10 7925 9111</a>
                 </p>
               </div>
-              {/* <div className="mb-7 5">
-                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Linktree
-                </h4>
-                <p className="text-gray dark:text-white font-medium text-para3">
-                  <a
-                    href="https://link.inpock.co.kr/vava.innovation"
-                    target="_blank"
-                  >
-                    Go To Linktree
-                  </a>
-                </p>
-              </div> */}
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Facebook (ENG) - Messenger Available
@@ -225,9 +212,22 @@ const Contact = () => {
                   </a>
                 </p>
               </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Link in Bio
+                </h4>
+                <p className="text-gray dark:text-white font-medium text-para3">
+                  <a
+                    href="https://link.inpock.co.kr/vava.innovation"
+                    target="_blank"
+                  >
+                    Go To Linktree
+                  </a>
+                </p>
+              </div>
               {/* <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Case Archive(KOR/JPN)
+                  Case Archive (KOR/JPN)
                 </h4>
                 <p className="text-gray dark:text-white font-medium text-para3">
                   <a
