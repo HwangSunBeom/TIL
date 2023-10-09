@@ -163,13 +163,13 @@ const Contact = () => {
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Our Loaction
                 </h4>
-                <p>505-104, 63, HEOLLEUNG-RO 590-GIL, GANGNAM-GU, SEOUL, SOUTH KOREA</p>
+                <p className="text-gray dark:text-white font-medium text-para3">505-104, 63, HEOLLEUNG-RO 590-GIL, GANGNAM-GU, SEOUL, SOUTH KOREA</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Email Address
                 </h4>
-                <p>
+                <p className="text-gray dark:text-white font-medium text-para3">
                   <a href="mailto:vava.innovation@gmail.com">vava.innovation@gmail.com</a>
                 </p>
               </div>
@@ -177,7 +177,7 @@ const Contact = () => {
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Phone Number
                 </h4>
-                <p>
+                <p className="text-gray dark:text-white font-medium text-para3">
                 <a
                   href="tel:+821079259111"
                 >

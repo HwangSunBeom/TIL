@@ -79,7 +79,7 @@ const About = () => {
                 </span>
                 ?
               </h2>
-              <p>
+              <p className="text-gray dark:text-white font-medium text-para3">
                 Today, many churches, schools, and event venues
                 install and use cameras. Even if not all, most cameras
                 are installed and used on the walls or mezzanine
@@ -96,7 +96,7 @@ const About = () => {
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
                     React 18, Next.js 13 and TypeScript
                   </h5>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p className="text-gray dark:text-white font-medium text-para3">Ut ultricies lacus non fermentum ultrices.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -109,7 +109,7 @@ const About = () => {
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
                     Fully Customizable
                   </h5>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p className="text-gray dark:text-white font-medium text-para3">consectetur adipiscing elit fermentum ultricies.</p>
                 </div>
               </div> */}
             </motion.div>
@@ -149,7 +149,7 @@ const About = () => {
                   Integrations
                 </span>
               </h2> */}
-              <p>
+              <p className="text-gray dark:text-white font-medium text-para3">
                 Cameras all require high magnification zoom and are
                 remotely controlled from a control center. They are
                 installed on walls, columns, ceilings, mezzanine
@@ -297,9 +297,9 @@ const About = () => {
                 </span>
                 ?
               </h2> */}
-              <p className="whitespace-pre-wrap">
+              <p className="whitespace-pre-wrap text-gray dark:text-white font-medium text-para3">
                 We often see unwanted trembling within the video footage.
-                Sometimes it is very slight, but sometimes it is such huge that we can recognize/sense/see it. It was shaking from the beginning, always.
+                Sometimes it is very slight, but sometimes it is such huge that we can see it. It was shaking from the beginning, always.
                 But it was discovered too late.
               </p>
 
@@ -313,7 +313,7 @@ const About = () => {
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
                     React 18, Next.js 13 and TypeScript
                   </h5>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p className="text-gray dark:text-white font-medium text-para3">Ut ultricies lacus non fermentum ultrices.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -326,7 +326,7 @@ const About = () => {
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
                     Fully Customizable
                   </h5>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p className="text-gray dark:text-white font-medium text-para3">consectetur adipiscing elit fermentum ultricies.</p>
                 </div>
               </div> */}
             </motion.div>
@@ -366,7 +366,7 @@ const About = () => {
                   Integrations
                 </span>
               </h2> */}
-              <p>
+              <p className="text-gray dark:text-white font-medium text-para3">
               ZAVA reduces the video footage trembling by about 93% on average. We invented ZAVA to solve this trembling problem. We continue to improve and develop.
               </p>
               {/* <div>

@@ -34,8 +34,8 @@ const Hero = () => {
                   SaaS
                 </span> */}
               </h1>
-              <p>
-              Designed by VAVA
+              <p className="text-gray dark:text-white font-medium text-para3">
+              Invented by VAVA
               </p>
 
               {/* <div className="mt-10">

@@ -57,7 +57,7 @@ const Pricing = () => {
                       height={500}
                     />
               </div>
-              <p>for any PTZ cams and light handycams</p>
+              <p className="text-gray dark:text-white font-medium text-para3">for any PTZ cams and light handycams</p>
 
 
               {/* <button
@@ -106,7 +106,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p>for professional hand-held cams with Pan tilt system</p>
+              <p className="text-gray dark:text-white font-medium text-para4">for professional hand-held cams with pan tilt system</p>
               {/* <button
                 aria-label="purchase this plan"
                 className="inline-flex items-center gap-2.5 text-primary dark:text-white dark:hover:text-primary font-medium transition-all duration-300"
@@ -150,7 +150,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p>for ENG/EFP Cams with pan tilt system</p>
+              <p className="text-gray dark:text-white font-medium text-para4">for ENG/EFP cams with pan tilt system</p>
             </div>
 
             {/* <!-- Pricing Item --> */}
@@ -178,7 +178,7 @@ const Pricing = () => {
                     height={500}
                   />
               </div>
-              <p>Contact us directly</p>
+              <p className="text-gray dark:text-white font-medium text-para4">Contact us directly</p>
 
 
               {/* <button

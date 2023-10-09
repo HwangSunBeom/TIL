@@ -46,12 +46,12 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mt-5 mb-10 whitespace-pre-wrap">
+                <p className="mt-5 mb-10 whitespace-pre-wrap text-gray dark:text-white font-medium text-para3">
                   WE SOLVE VIDEO FOOTAGE TREMBLING PROBLEMS. <br/>
                   WE INVENT NEW SOLUTIONS TO IMPROVE OUR LIVES.
                 </p>
 
-                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
+                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 text-gray dark:text-white font-medium text-para3">
                   Phone
                 </p>
                 <a
@@ -60,7 +60,7 @@ const Footer = () => {
                 >
                   +82 10 7925 9111
                 </a>
-                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 mt-3">
+                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5 mt-3 text-gray dark:text-white font-medium text-para3">
                   E-mail
                 </p>
                 <a
@@ -116,7 +116,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="inline-block hover:text-primary mb-3"
+                        className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3"
                       >
                         Home
                       </a>
@@ -124,7 +124,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/blog"
-                        className="inline-block hover:text-primary mb-3"
+                        className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3"
                       >
                         Blog
                       </a>
@@ -198,7 +198,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/contact"
-                        className="inline-block hover:text-primary mb-3"
+                        className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3"
                       >
                         Contact Us
                       </a>
@@ -326,7 +326,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; Copyright 2020. VAVA Co. All rights reserved.</p>
+              <p className="text-gray dark:text-white font-medium text-para3">&copy; Copyright 2020. VAVA Co. All rights reserved.</p>
             </motion.div>
 
             <motion.div
