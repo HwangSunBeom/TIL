@@ -12,21 +12,19 @@ const RelatedPost = async () => {
         </h4>
 
         <div>
-          {BlogData.slice(0, 3).map((post, key) => (
+          {BlogData.slice(0, 4).map((post, key) => (
             <div
               className="flex xl:flex-nowrap flex-wrap gap-4 2xl:gap-6 mb-7.5"
               key={key}
             >
-              <div className="relative max-w-45 w-45 h-18">
                 {post.mainImage ? (
-                  <Image fill src={post.mainImage} alt="Blog" />
+                  <Image width={125} height={125} src={post.mainImage} alt="Blog" />
                 ) : (
                   "No image"
                 )}
-              </div>
               <h5 className="font-medium text-md text-black dark:text-white hover:text-primary dark:hover:text-primary transition-all duration-300">
-                <Link href={`/blog/blog-details`}>
-                  {post.title.slice(0, 40)}...
+                <Link href={`/blog/blog-details${post._id !== 1 ? post._id : ''}`}>
+                  {post.title}
                 </Link>
               </h5>
             </div>

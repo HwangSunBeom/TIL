@@ -10,7 +10,7 @@ const SingleBlogPage = async () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col-reverse lg:flex-row gap-7.5 xl:gap-12.5">
             <div className="md:w-1/2 lg:w-[32%]">
-              <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-3.5 mb-10">
+              {/* <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-3.5 mb-10">
                 <form
                   action="https://formbold.com/s/unique_form_id"
                   method="POST"
@@ -39,9 +39,9 @@ const SingleBlogPage = async () => {
                     </button>
                   </div>
                 </form>
-              </div>
+              </div> */}
 
-              <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-9 mb-10">
+              {/* <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-9 mb-10">
                 <h4 className="font-semibold text-2xl text-black dark:text-white mb-7.5">
                   Categories
                 </h4>
@@ -63,14 +63,14 @@ const SingleBlogPage = async () => {
                     <a href="#">Rounded</a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               <RelatedPost />
             </div>
 
             <div className="lg:w-2/3">
               <div className="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-7.5 md:p-10">
-                <div className="mb-10 w-full overflow-hidden ">
+                {/* <div className="mb-10 w-full overflow-hidden ">
                   <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                     <Image
                       src={"/images/blog/blog-01.png"}
@@ -79,32 +79,144 @@ const SingleBlogPage = async () => {
                       className="object-cover object-center rounded-md"
                     />
                   </div>
-                </div>
+                </div> */}
 
                 <h2 className="font-semibold text-3xl 2xl:text-sectiontitle2 text-black dark:text-white mt-11 mb-5">
-                  Kobe Steel plant that supplied
+                Examples of Air-conditioning Impact
                 </h2>
 
                 <ul className="flex flex-wrap gap-5 2xl:gap-7.5 mb-9">
                   <li>
                     <span className="text-black dark:text-white">Author: </span>{" "}
-                    Jhon Doe
+                    VAVA_YEONG-EUN
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Published On: July 30, 2023
+                      Published On: February 4, 2022
                     </span>{" "}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Category:
+                      Category: {" "}
                     </span>
-                    Events
+                    Installation
                   </li>
                 </ul>
 
                 <div className="blog-details">
-                  <p>
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드1.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드2.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드3.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드4.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드5.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드6.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드7.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드8.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드2.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드9.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드10.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
+                    <Image
+                      src="/images/10 서울 강서 NN교회_영문/슬라이드11.png"
+                      alt="Kobe Steel plant that supplied"
+                      fill
+                      className="object-cover object-center rounded-md"
+                    />
+                  </div>
+
+                  
+
+                 
+
+                  {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur
                     leo. Ut venenatis rhoncus quam sed condimentum. Curabitur
@@ -122,9 +234,9 @@ const SingleBlogPage = async () => {
                     eleifend laoreet, odio libero lobortis lectus, non porttitor
                     sem urna sit amet metus. In sollicitudin quam est,
                     pellentesque consectetur felis fermentum vitae.
-                  </p>
+                  </p> */}
 
-                  <div className="flex flex-wrap gap-5">
+                  {/* <div className="flex flex-wrap gap-5">
                     <Image
                       src={"/images/blog/blog-01.png"}
                       width={350}
@@ -137,9 +249,9 @@ const SingleBlogPage = async () => {
                       height={200}
                       alt="image"
                     />
-                  </div>
+                  </div> */}
 
-                  <h3 className="pt-8">Nunc elementum elit viverra, tempus quam non</h3>
+                  {/* <h3 className="pt-8">Nunc elementum elit viverra, tempus quam non</h3>
 
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -148,10 +260,10 @@ const SingleBlogPage = async () => {
                     vel turpis in dolor volutpat imperdiet in ut mi. Integer non
                     volutpat nulla. Nunc elementum elit viverra, tempus quam
                     non, interdum ipsum.
-                  </p>
+                  </p> */}
                 </div>
 
-                <SharePost />
+                {/* <SharePost /> */}
               </div>
             </div>
           </div>

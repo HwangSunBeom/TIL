@@ -3,43 +3,29 @@ import { Blog } from "@/types/blog";
 const BlogData: Blog[] = [
   { 
     _id: 1,
-    mainImage: "/images/27_광주_성지교회_영문/슬라이드2.png",
-    title: "Free advertising for your online business",
+    mainImage: "/images/10 서울 강서 NN교회_영문/슬라이드1.png",
+    title: "Examples of Air-conditioning Impact",
     metadata:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "CASE #10 / SEOUL",
   },
   { 
     _id: 2,
-    mainImage: "/images/blog/blog-02.png",
-    title: "9 simple ways to improve your design skills",
+    mainImage: "/images/21 영주_영주제일교회_영문/슬라이드1.png",
+    title: "Examples of Traffic Impact",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   {
-    _id: 2,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Tips to quickly improve your coding speed.",
+    _id: 3,
+    mainImage: "/images/27 광주_성지교회_영문/슬라이드1.png",
+    title: "Examples of Audio-effect Impact",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   { 
-    _id: 1,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Free advertising for your online business",
-    metadata:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-  },
-  { 
-    _id: 2,
-    mainImage: "/images/blog/blog-04.png",
-    title: "9 simple ways to improve your design skills",
-    metadata:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-  },
-  {
-    _id: 2,
-    mainImage: "/images/blog/blog-01.png",
-    title: "Tips to quickly improve your coding speed.",
+    _id: 4,
+    mainImage: "/images/31 천안_복음과 성령교회_영문/슬라이드1.png",
+    title: "Examples of Door Impact",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },

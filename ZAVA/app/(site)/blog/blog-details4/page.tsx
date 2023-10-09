@@ -82,17 +82,17 @@ const SingleBlogPage = async () => {
                 </div> */}
 
                 <h2 className="font-semibold text-3xl 2xl:text-sectiontitle2 text-black dark:text-white mt-11 mb-5">
-                Examples of Audio-effect Impact
+                Examples of Door Impact
                 </h2>
 
                 <ul className="flex flex-wrap gap-5 2xl:gap-7.5 mb-9">
                   <li>
                     <span className="text-black dark:text-white">Author: </span>{" "}
-                    VAVA_YEOUNG-EUN
+                    VAVA_MUNPYEONG
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Published On: July 4, 2023
+                      Published On: September 4, 2023
                     </span>{" "}
                   </li>
                   <li>
@@ -106,7 +106,7 @@ const SingleBlogPage = async () => {
                 <div className="blog-details">
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드1.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드1.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -115,7 +115,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드2.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드2.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -124,7 +124,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드3.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드3.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -133,7 +133,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드4.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드4.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -142,7 +142,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드5.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드5.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -151,7 +151,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드6.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드6.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -160,7 +160,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드7.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드7.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -169,7 +169,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드8.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드8.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -178,7 +178,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드2.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드2.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -187,7 +187,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드9.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드9.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -196,7 +196,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드10.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드10.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
@@ -205,7 +205,7 @@ const SingleBlogPage = async () => {
 
                   <div className="relative aspect-[97/97] w-full sm:aspect-[97/97]">
                     <Image
-                      src="/images/27 광주_성지교회_영문/슬라이드11.png"
+                      src="/images/31 천안_복음과 성령교회_영문/슬라이드11.png"
                       alt="Kobe Steel plant that supplied"
                       fill
                       className="object-cover object-center rounded-md"
