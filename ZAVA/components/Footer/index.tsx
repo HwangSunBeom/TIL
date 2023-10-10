@@ -261,6 +261,14 @@ const Footer = () => {
                     </li>
                     <li>
                       <a 
+                      href="https://drive.google.com/drive/folders/10U-rmOMFYO7e8RONQnba1gETpSVz09Ek?usp=drive_link"
+                      target="_blank"
+                      className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
+                        Video Archive (ENG)
+                      </a>
+                    </li>
+                    <li>
+                      <a 
                       href="https://drive.google.com/drive/folders/11SM8rDkpCp6dqYjw9_bKOg5YoC7P3s7M"
                       target="_blank"
                       className="inline-block hover:text-primary mb-3 text-gray dark:text-white font-medium text-para3">
