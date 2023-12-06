@@ -1,73 +1,136 @@
-import { getMessaging, getToken } from 'firebase/messaging';
-import React, { useRef, useEffect, useState } from 'react';
+import { Image } from "antd";
+import { getMessaging, getToken } from "firebase/messaging";
+import React, { useRef, useEffect, useState } from "react";
+import mainPosition from "../../assets/images/정면.jpg";
+import mainPositionRemove from "../../assets/images/정면-removebg-preview.png";
+import settingPositionLeft1 from "../../assets/images/좌측1-removebg-preview.png";
+import settingPositionLeft2 from "../../assets/images/좌측2-removebg-preview.png";
+import settingPositionLeft3 from "../../assets/images/좌측3-removebg-preview.png";
+import settingPositionRight1 from "../../assets/images/우측1-removebg-preview.png";
+import settingPositionRight2 from "../../assets/images/우측2-removebg-preview.png";
+import settingPositionRight3 from "../../assets/images/우측3-removebg-preview.png";
 
-const Webcam: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(null);
+interface Props {
+  videoRef: React.MutableRefObject<HTMLVideoElement | null>;
+  isGuide: boolean;
+  settingPosition: string;
+}
 
-  useEffect(() => {
-    // 웹캠에 접근
-    navigator.mediaDevices.getUserMedia({ video: true })
-      .then(stream => {
-        if (videoRef.current) videoRef.current.srcObject = stream;
-        
-        // MediaRecorder 설정
-        const recorder = new MediaRecorder(stream);
-        setMediaRecorder(recorder);
-      })
-      .catch(err => console.error(err));
-  }, []);
-
-  const startRecording = () => {
-    if (mediaRecorder) {
-      mediaRecorder.start();
-      console.log('녹화 시작');
-    }
-  };
-
-  const stopRecording = () => {
-    if (mediaRecorder) {
-      mediaRecorder.stop();
-      console.log('녹화 종료');
-      mediaRecorder.ondataavailable = function(e) {
-        // 녹화된 데이터 다운로드
-        const url = URL.createObjectURL(e.data);
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = url;
-        a.download = 'recording.webm';
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-      };
-    }
-  };
-
-  const sendPushNotification = async () => {
-    const messaging = getMessaging();
-    const token = await getToken(messaging, { vapidKey: 'BN7gMnHOuib65oN2GWVW9IfDq9LOCJyNQPVpr4kwEat4kdLEmmJqi6lyCchIVud1hrA9yZO1_Lb_nwrrpJjln3g' });
-
-    if (token) {
-      fetch('YOUR_SERVER_ENDPOINT', { // 서버 엔드포인트로 POST 요청
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          token,
-          title: 'warning',
-          content: '자세를 고쳐 앉으세요.'
-        }),
-      });
-    }
-  };
+function Webcam(props: Props) {
 
   return (
-    <div>
-      <video ref={videoRef} autoPlay></video>
-      <button onClick={startRecording}>녹화 시작</button>
-      <button onClick={stopRecording}>녹화 중지</button>
-      <button onClick={sendPushNotification}>푸시 알림 발송</button>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "60vh", // 화면 높이에 맞춤
+        position: "relative",
+      }}
+    >
+      <video
+        ref={props.videoRef}
+        autoPlay
+        style={{ position: "absolute", width: "55vw", top: 50 }}
+      ></video>
+      {props.isGuide && (
+        <img
+          src={mainPositionRemove}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      )}
+      {props.settingPosition === "left30" ? (
+        <img
+          src={settingPositionLeft1}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "left60" ? (
+        <img
+          src={settingPositionLeft2}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "left90" ? (
+        <img
+          src={settingPositionLeft3}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "right30" ? (
+        <img
+          src={settingPositionRight1}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "right60" ? (
+        <img
+          src={settingPositionRight2}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "right90" ? (
+        <img
+          src={settingPositionRight3}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />
+      ) : props.settingPosition === "main" ? (
+        <img
+          src={mainPositionRemove}
+          alt="감자"
+          style={{
+            position: "absolute",
+            top: 120,
+            opacity: 0.4,
+            zIndex: 999,
+            width: "60vw",
+          }}
+        />) : ''
+      }
     </div>
   );
 }
