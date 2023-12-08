@@ -169,6 +169,7 @@ function App() {
     }, 3000)
   }, [isError])
 
+  
   useEffect(() => {
     settingPostion === 'right90' &&  setTimeout(()=>{
       setIsDone(true)
@@ -181,7 +182,7 @@ function App() {
   return (
     <BrowserRouter>
       <Context.Provider value={contextValue}>
-        {contextHolder}
+        {/* {contextHolder} */}
         {msgcontextHolder}
         
         <div className="App">
