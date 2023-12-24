@@ -168,7 +168,6 @@ function App() {
       setIsError(false);
     }, 3000)
   }, [isError])
-
   
   useEffect(() => {
     settingPostion === 'right90' &&  setTimeout(()=>{
