@@ -70,6 +70,7 @@ function App() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [mediaRecorder, setMediaRecorder] =
     useState<MediaRecorder | null>(null);
+    // 에러발생 확인
   const [isError, setIsError] = useState(false);
   const [isDone, setIsDone] = useState(false);
   const [settingPostion, setSettingPostion] = useState("");
@@ -78,6 +79,7 @@ function App() {
 
   const [messageApi, msgcontextHolder] = message.useMessage();
 
+  // 메시지 출력
   const info = () => {
     messageApi.info('사진이 촬영되었습니다.');
   };
