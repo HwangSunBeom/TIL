@@ -5,6 +5,8 @@
 # a = now.hour
 # b = now.minute
 
+
+# BOJ 2525
 b, a = input().split()
 a = int(a)
 b = int(b)
