@@ -1,3 +1,5 @@
+# BOJ 3003
+
 a,b,c,d,e,f = input().split()
 a = 1 - int(a)
 b = 1 - int(b)
