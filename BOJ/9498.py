@@ -1,3 +1,5 @@
+# BOJ 9498
+
 a = int(input())
 
 if a<60 :
