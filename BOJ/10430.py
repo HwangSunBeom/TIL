@@ -1,3 +1,4 @@
+# BOJ 10430
 a,b,c = input().split()
 a = int(a)
 b = int(b)
