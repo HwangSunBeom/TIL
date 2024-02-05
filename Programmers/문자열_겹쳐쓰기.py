@@ -1,3 +1,5 @@
+# 문자열 겹쳐쓰기
+
 def solution(my_string, overwrite_string, s):
     L1 = list(my_string)
     L2 = list(overwrite_string)
