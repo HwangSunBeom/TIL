@@ -98,6 +98,7 @@ function App() {
 
   const contextValue = useMemo(() => ({ name: "순범" }), []);
 
+
   const startRecording = () => {
     if (mediaRecorder) {
       mediaRecorder.start();
