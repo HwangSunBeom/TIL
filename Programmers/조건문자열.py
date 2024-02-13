@@ -1,3 +1,5 @@
+# 조건문자열
+
 def solution(ineq, eq, n, m):
     answer = 0
     if ineq == '<' and eq == '=' :    
