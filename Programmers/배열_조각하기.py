@@ -1,3 +1,5 @@
+#배열 조각하기
+
 def solution(arr, query):
     answer = []
     index = 0
