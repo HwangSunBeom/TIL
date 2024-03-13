@@ -1,3 +1,5 @@
+# 리스트 자르기
+
 def solution(n, slicer, num_list):
     answer = []
     a, b, c = slicer
