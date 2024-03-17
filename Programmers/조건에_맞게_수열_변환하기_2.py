@@ -1,3 +1,5 @@
+# 조건에 맞게 수열 변환하기 2
+
 def solution(arr):
     answer = 0
     prev = arr
