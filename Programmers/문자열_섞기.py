@@ -1,3 +1,5 @@
+# 문자열 섞기
+
 def solution(str1, str2):
     answer = ''
     j, k = 0, 0
