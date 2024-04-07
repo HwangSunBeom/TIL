@@ -1,6 +1,7 @@
+# 프로그래머스 비기너 1번 문제
+
 def solution(s):
     answer = ''
-    # count = 0
     for index, str in enumerate(s) :
         if index == 0 :
             answer += str.upper()
