@@ -1,3 +1,5 @@
+# 프로그래머스 기능개발
+
 import math
 
 def solution(progresses, speeds):
