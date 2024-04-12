@@ -1,3 +1,5 @@
+# 프로그래머스 접미사 배열
+
 def solution(my_string):
     answer = []
     for i in range(0, len(my_string)) :
