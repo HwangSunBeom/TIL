@@ -1,3 +1,5 @@
+# 주사위 게임 3
+
 def solution(a, b, c, d):
     answer = 0
     dice = [a, b, c, d]
