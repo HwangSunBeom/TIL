@@ -1,3 +1,5 @@
+# 무작위로 K개의 수 뽑기
+
 def solution(arr, k):
     answer = []
     for num in arr :
