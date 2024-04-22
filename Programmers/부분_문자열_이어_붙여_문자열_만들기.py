@@ -1,3 +1,5 @@
+# 부분 문자열 이어 붙여 문자열 만들기
+
 def solution(my_strings, parts):
     answer = ''
     count = 0
