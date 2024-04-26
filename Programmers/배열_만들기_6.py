@@ -1,3 +1,5 @@
+# 배열 만들기 6
+
 def solution(arr):
     stk = []
     i = 0
