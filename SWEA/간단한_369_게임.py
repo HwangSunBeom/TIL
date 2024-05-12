@@ -1,3 +1,5 @@
+# 간단한 369 게임
+
 N = int(input())
 num_list = []
 for num in range(1, N+1) :
