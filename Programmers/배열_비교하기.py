@@ -1,3 +1,5 @@
+# 배열 비교하기
+
 def solution(arr1, arr2):
     answer = 0
     if len(arr1) > len(arr2) :
