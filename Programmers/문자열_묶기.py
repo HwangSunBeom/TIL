@@ -1,3 +1,5 @@
+# 문자열 묶기
+
 def solution(strArr):
     answer = 0
     count = [0] * 31
