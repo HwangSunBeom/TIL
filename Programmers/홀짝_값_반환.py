@@ -1,3 +1,5 @@
+# 홀수 값 반환
+
 def solution(n):
     answer = 0
     if n % 2:
