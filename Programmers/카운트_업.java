@@ -1,3 +1,5 @@
+// 카운트 업
+
 class Solution {
     public int[] solution(int start_num, int end_num) {
         int size = end_num - start_num + 1;
