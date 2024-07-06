@@ -1,3 +1,5 @@
+# JadenCase 문자열 만들기
+
 def solution(s):
     answer = ''
     for i, str in enumerate(s) :
