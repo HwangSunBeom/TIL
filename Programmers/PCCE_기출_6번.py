@@ -1,3 +1,5 @@
+# PCCE 기출 6번
+
 def solution(numbers, our_score, score_list):
     answer = []
     for i in range(len(numbers)):
