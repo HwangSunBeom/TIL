@@ -1,7 +1,7 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import DefaultLayout from './layouts/DefaultLayout';
+import TodoHeader from './components/todos/TodoHeader';
+import TodoBody from './components/todos/TodoBody';
 
 function App() {
   return (
