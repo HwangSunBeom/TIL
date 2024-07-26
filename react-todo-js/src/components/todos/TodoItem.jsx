@@ -5,10 +5,11 @@ import Modal from "@/components/ui/Modal";
 import TodoForm from "./TodoForm";
 import { createPortal } from "react-dom";
 
-const TodoItem = ({ todo, onAdd, onUpdate }) => {
+const TodoItem = ({ todo, onAdd, onUpdate, onDelete }) => {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
   const openModal = () => setOpen(true);
+
   return (
     <li className="flex gap-4 justify-between my-4 py-4 px-4 border-[1px] bg-gray-700 rounded-md shadow-xl">
       <div>
@@ -27,7 +28,7 @@ const TodoItem = ({ todo, onAdd, onUpdate }) => {
       </div>
       <div className="flex items-center gap-1">
         <IconButton icon={"✏️"} onClick={openModal} />
-        <IconButton textColor="text-red-300" icon={"🗑"} />
+        <IconButton textColor="text-red-300" icon={"🗑"} onClick={()=>onDelete(todo.id)} />
       </div>
       {open &&
         createPortal(
