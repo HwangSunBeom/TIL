@@ -14,4 +14,4 @@ const Modal = ({ children, onClose }) => {
     </>
   );
 };
-export default Modal;
+export default Modal

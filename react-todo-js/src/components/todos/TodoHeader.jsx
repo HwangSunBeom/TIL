@@ -23,7 +23,9 @@ const TodoHeader = ({ onAdd }) => {
       {open &&
         createPortal(
           <Modal onClose={closeModel}>
-            <TodoForm onClose={closeModel} onAdd={onAdd} />
+            <TodoForm onClose={closeModel} onAdd={onAdd} >
+              New Todo
+            </TodoForm>
           </Modal>,
           document.body
         )}
