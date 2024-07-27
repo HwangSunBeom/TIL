@@ -6,7 +6,7 @@ import { useState } from "react";
 import TodoFilter from "./TodoFilter";
 
 // 함수형 컴포넌트(TodoHeader)
-const TodoHeader = ({ onAdd }) => {
+const TodoHeader = ({ onAdd, category, onFilter }) => {
   const [open, setOpen] = useState(false);
   const closeModel = () => setOpen(false);
   const openModel = () => setOpen(true);
@@ -29,7 +29,7 @@ const TodoHeader = ({ onAdd }) => {
           </Modal>,
           document.body
         )}
-      <TodoFilter />
+      <TodoFilter category={category} onFilter={onFilter} />
     </div>
   );
 };
