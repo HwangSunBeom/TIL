@@ -1,3 +1,5 @@
+//  홀짝 구분하기
+
 import java.util.Scanner;
 
 public class Solution {
